@@ -1,0 +1,32 @@
+.head h1{
+    text-align: center;
+    color: rgb(34, 96, 183);
+    font-family: arial;
+    padding-top:80px;
+    font-size:  40px;
+
+}
+label{
+    font-weight: bold;
+}
+#submit{
+    font-weight: bold;
+}
+#box1{
+    border: 2px solid black;
+}
+.formnew{
+    text-align: center;
+}
+.tab{
+    text-align: center;
+}
+table,th,td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+th,td{
+    padding: 10px;
+}

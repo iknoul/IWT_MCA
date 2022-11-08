@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myfunction() {
+            var BG_age=parseInt(document.getElementById("BG_age").value);
+            var B_age=parseInt(document.getElementById("B_age").value);
+            if (BG_age>=21 && B_age>=18)
+            {
+                alert("Eligible for Marriage");
+            }
+            else
+            {
+                alert("Not eligible for Marriage.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form >
+    <label for="Bridegroom_name">Bridegroom age : </label>
+    <input type="text" name="Bridegroom_name" id="BG_age"  style="display: inline;"><br>
+    <label for="Bridegroom_name">Bride age :</label>
+    <input type="text" name="Bridegroom_name" id="B_age"  style="display: inline;">
+    </form><br>
+    <button onclick="myfunction()">OK</button>
+    
+</body>
+</html>
