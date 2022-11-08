@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn:focus,.btn:hover{
+    box-shadow: none;
+    outline: none;
+}
+.btn:active{
+    outline: red;
+}
