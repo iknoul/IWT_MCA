@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass2_form</title>
+     <style>
+form{
+    margin-top: 56px;
+    margin-bottom: 56px;
+    margin-left: 350px;
+    margin-right: 250px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 35px;
+    padding-right: 30px;
+    background-color:white;
+    width: 35%;
+    border: 3px solid black; 
+}
+button{
+    padding: 5px 6px 5px 6px;
+    background-color:white;
+}
+#myfile{
+    background-color:white;
+}
+     </style>
+</head>
+<body >
+    <form>
+        <div>
+            <label for="Username">Enter Name of your friend &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="text">
+        </div>
+        <br>
+        <div>
+            <label for="myfile"> Choose the file you want to post to your friend</label><br>
+            <input type = text name="file">&nbsp;&nbsp;&nbsp;
+            <input type="file" id="myfile" name="Browse">
+        </div>
+        <br>
+        <div>
+            <label for="checkbox">What does the file contain ?</label><br>
+            <input type="checkbox" id="check" >Image
+            <input type="checkbox" id="check">Source code
+            <input type="checkbox" id="check">Binary code
+        </div>
+        <br>
+        <div>
+            &nbsp;&nbsp;<label for="Submit">You have Completed the form</label>
+            &nbsp;&nbsp;&nbsp;
+            <button>Submit Query</button>
+        </div>
+    </form>   
+</body>
+</html>
