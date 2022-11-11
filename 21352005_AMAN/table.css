@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(242, 242, 242);
+}
+.container h1,table{
+    text-align: center;
+    color: rgb(155, 30, 30);
+
+}
+table{
+    text-align: center;
+    width: 500px;
+    border-collapse: collapse;
+    padding: 12px 15px;
+    background-color: white;
+    font-weight: bold;
+}
+th{
+    border-bottom: 20px;
+    background-color: rgb(14, 106, 95);
+    color: white;
+    margin: 25px 0;
+    
+}
+tr{
+    border-top: 20px;
+    margin: 25px 0;
+    color: rgb(29, 86, 69);
+    height: 35px;
+    font-size: 45;
+    font-weight: bold;
+    text-align: left;
+}
