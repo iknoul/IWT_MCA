@@ -1,0 +1,36 @@
+*{
+    background-color: darkgray;
+}
+.container{
+    margin: 36px auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 35px;
+    padding-right: 30px;
+    width: 35%;
+    background-color: white;
+}
+p{
+    background-color: white;
+}
+.text{
+    background-color: white;
+}
+.btn{
+    background-color: lightskyblue;
+    padding: 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+    border:none;
+    cursor:pointer;
+    font-size: 23px;
+    border-radius: 4px;
+    font-family: "segoe UI";
+    font-weight: bold;
+}
+/* .btn:hover{
+    color: darkgoldenrod;
+    background-color: rgb(223,245,201);
+    border: 2px solid black;
+    
+} */

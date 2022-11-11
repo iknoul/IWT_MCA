@@ -1,0 +1,34 @@
+table {
+    width: 40%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: right;
+}
+
+th,
+td {
+
+    padding-bottom: 5px;
+    background-color: white;
+
+    padding-right: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
