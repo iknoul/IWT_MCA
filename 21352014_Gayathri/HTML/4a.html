@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function alertFilename()
+            {
+                var thefile = document.getElementById('thefile');
+            }
+        </script>
+        
+    </head>
+    <body>
+        <table align="center" style="border: 1px solid black; height: 200px ;width: 400px;;">
+            <form>
+                <tr><td><label for="name">Enter Name of your friend</label>
+                    
+                    <input type="text" id="name" name="name"></td></tr>
+                <tr><td><label for="file">Choose the file you want to post to your friend</label></td></tr>
+                <tr><td><input type="text" name="some_text" id="some_text" />
+                        <input type="file" id="thefile" style="display: none;"  />
+            <input type="button" value="Browse..." onclick="document.getElementById('thefile').click();" /></td>
+                </tr>
+                <tr><td>What does the file contain ?</td></tr>
+                <tr><td><input type="checkbox" id="image"><label for="image">Image</label>
+                    <input type="checkbox" id="sc"><label for="sc">Source Code</label>
+                    <input type="checkbox" id="bc"><label for="bc">Binary Code</label></td></tr>
+                <tr><td><label for ="s">You have completed the Form :</label>
+                    <button id="s"><strong>Submit Query</strong></button></td></tr>
+            </form>
+        </table>
+    </body>
+</html>
