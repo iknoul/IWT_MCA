@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numeric Check</title>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+</head>
+<body>
+<h2> Checking String or Integer </h2>
+<p> Enter the Text below: </p>
+<b> Enter any value here: </b> <input type = "text">
+<br/>
+<p> Click the button </p>
+<button> Check </button>
+<p id = "p1"> </p1>
+<script>
+$(document).ready(function() {
+$("button").click(function() {
+var val = $("input").val();
+var check = $.isNumeric(val);
+
+if (check) {
+$("#p1").html("Entered text " + "<b>" + val + "</b>"+ " is Numeric");
+}
+else {
+$("#p1").html("Entered text " + "<b>" + val + "</b>"+ " is String");
+}
+});
+});
+</script>
+</body>
+</html>
+</body>
+</html>
+
+ 
+
