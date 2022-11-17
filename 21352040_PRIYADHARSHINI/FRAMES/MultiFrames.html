@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multi Frames</title>
+<style>
+body{
+margin:0px;
+padding:0px;
+text-align:center;
+}
+h2,h3{
+font-weight:bold;
+}
+ul{
+text-align:left;
+padding-left:150px;
+}
+img {
+width: 30%;
+height: 100%;
+object-fit: cover;
+}
+.row{
+font-family:sans-serif;
+}
+.A{
+background-color:#FE8737;
+padding:1%;
+height:100px;
+}
+.B{
+background-color:#FFD9CE;
+padding:.95%;
+height:200px;
+width:48%;
+float:left;
+}
+.C{
+background-color:#FFEEE7;
+padding:.95%;
+height:200px;
+width:31.3%;
+float:left;
+}
+.scroll{
+overflow:scroll;
+}
+.blink{
+animation:blnk 2s linear infinite;
+font-size:3em;
+color:#880000;
+}
+@keyframes blnk{
+0%{opacity:0;}
+25%{opacity:.5;}
+50%{opacity:1;}
+75%{opacity:.75;}
+100%{opacity:.5;}
+}
+.mrg{
+margin-right:.2%;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="row">
+<div class="A">
+<h2>S.Priyadharshini</h2>Lawspet, Puducherry-08.
+</div></div>
+<div class="row">
+<div class="B mrg"><h3>Qualifications</h3>
+<ul>
+<li>SSLC</li>
+<li>HSC</li>
+<li>B.Com</li>
+</ul>
+</div><div class="B"><h3>Favorite sites</h3>
+<ul>
+<li><a href="https://www.instagram.com/priya_velu_7" target="_blank">Instagram</a></li>
+<li><a href="https://www.google.com" target="_blank">Google</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="C mrg scroll"><h3>Scrolling message</h3>Computer Applications play a very important role in today's scenario as every individual is significantly dependent on machines. A computer is one such machine, which has made its presence in every walk of our life. With the wide range of applications, it has to offer, the need for learning computer science is now more than ever. The recent boom in the IT Industry tells us that the experts in the field of computer applications are needed both in India and abroad. Moreover, with the government's ambitious plan of digitalization, it may go a notch higher. The huge gap in demand and supply in the field of computer applications help them command a better salary.</div><div class="C mrg"><h3 class="blink">Computer Applications</h3></div><div class="C"><img src="server.jpg" width="300" height="400"/></div>
+</div>
+</div>
+</body>
+</html>
