@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="blink">Thanks For Visting.</p>
+    <script type="text/javascript">
+        let blink=document.getElementById('blink');
+        setInterval(function(){
+            blink.style.opacity=(blink.style.opacity==0 ? 1 : 0)
+        }, 1000);
+    </script>
+</body>
+</html>
