@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="whileloop()">Click whileloop</button>
+    <button onclick="dowhile()">Click Do While</button>
+    <button onclick="mufunc()">Click For Loop</button>
+    <br>
+    <button onclick="driving()">Click For Licence</button>
+    <p id="hlw"></p>
+    <script>
+        function myfunc() {
+            for (let i = 0; i < 10; i++) {
+                document.write(i + "<br>");
+
+
+            }
+        }
+    </script>
+
+    <script>
+        function whileloop() {
+            let i = 0;
+            while (i < 11) {
+                document.write(i + "<br>");
+                i++;
+            }
+
+        }
+    </script>
+
+    <script>
+        function dowhile() {
+            let i = 0;
+            do {
+                document.write(i + "<br>");
+                i++;
+            } while (i < 11);
+        }
+    </script>
+
+    <script>
+        function driving() {
+            var dr = parseInt(prompt("Enter Your Age "));
+            var name = prompt("Enter Your Age ");
+            if (dr<18) {
+                document.write(name+", You are Not Eligible");
+            }
+            else{
+                document.write(name+", You are Eligible");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

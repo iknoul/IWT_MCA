@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="">Enter The Groom Name: </label>
+        <input type="text" id="gname">
+        <br>
+        <label for="">Enter Groom Age</label>
+        <input type="text" id="gage">
+        <br>
+        <label for="">Enter Bride Name: </label>
+        <input type="text" id="bname">
+        <br>
+        <label for="">Enter Bride Age</label>
+        <input type="text" id="bage">
+        <br>
+        <button onclick="myfunc()">Click</button>
+    </form>
+    <p id="print"></p>
+    <script>
+        function myfunc() {
+            var gname=document.getElementById("gname").value;
+            var bname=document.getElementById("bage").value;
+            var gage=parseInt(document.getElementById("gage").value);
+            var bage=parseInt(document.getElementById("bage").value);
+            if(gage<18 || bage<21){
+                document.getElementById("print").innerHTML=gname+" & "+ bname +"Not elegible for marriage";
+                
+                
+            }
+            else{
+                document.getElementById("print").innerHTML=gname+" & "+ bname +" are elegible for marriage";
+               
+            }
+            
+            
+            
+        }
+    </script>
+</body>
+</html>
