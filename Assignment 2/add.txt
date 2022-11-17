@@ -1,0 +1,9 @@
+echo "# IWT_MCA" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://git@github.com/PUMCAGUYS/IWT_MCA.git
+git push -u origin main
+
+git remote set-url origin https://git@github.com/PUMCAGUYS/IWT_MCA.git

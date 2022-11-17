@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./all.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Write a HTML code to generate following output</h1><hr>
+    <div class="Container">    
+        <div  class="FormRegistration">
+            <h2 >Registration Form</h2>
+            <table>
+            <form class="forReg">
+                <tr>
+                    <td><label for="a">Username: </label></td>
+                   <td> <input id="a" type="text"></td>
+                </tr>
+            
+                <tr>
+                    <td><label for="a">Password: </label></td>
+                   <td> <input id="a" type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="a">Confirm Password: </label></td>
+                   <td> <input id="a" type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="a">FirstName: </label></td>
+                   <td> <input id="a" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="a">LastName: </label></td>
+                   <td> <input id="a" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="a">Email: </label></td>
+                   <td> <input id="a" type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="a">Phone Number: </label></td>
+                   <td> <input id="a" type="tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="a">Location: </label></td>
+                   <td> <input id="a" type="text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                   <td> <button type="submit">Save</button>
+                    <button type="reset">Reset</button></td>
+                </tr>   
+            </form>
+        </table>
+        </div>
+        <hr >
+        <div class="bForm" >
+            Enter Name of your friend
+            <input type="text"><br>
+            <p>Choose the file you want to post to your friend</p><br>
+                 <form>
+                <input type="text"  id="filename"/> 
+                <input type="file"  id="file" value="Browse"  name="file" onchange="setfilename(this.value);"/> 
+                 </form>
+             <br> What does this file contain?<br>
+             <input type="checkbox"> Image &emsp; 
+             <input type="checkbox"> Source Code &emsp;
+             <input type="checkbox"> Binary Code  &emsp;
+             <br> &ensp; You have Completed the Form 
+             <button type="submit">Submit Query</button>  
+        </div>
+        <hr>
+
+    <div class="linkContainer">
+        <a href="./frameset.html"  class="Frameset">FRAME SET Answer!!!</a>
+    </div>
+    <hr>
+    <div class="Tab" >
+        <table border="1" class="TabMain">
+            <tr>
+                <th>Country</th>
+                <th colspan="2">Population (in Crores)</th>
+            </tr>
+                <tr>
+                    <td rowspan="4">INDIA</td> 
+                    <tr> 
+                        <td> 1998</td>
+                        <td> 85</td>
+                    </tr>
+                    <tr> 
+                        <td> 1999</td>
+                        <td> 90</td>
+                    </tr>
+                    <tr> 
+                        <td> 2000</td>
+                        <td> 100</td>
+                    </tr>
+                   </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">USA</td>
+                   <td> 
+                    <tr> 
+                        <td> 1998</td>
+                        <td> 30</td>
+                    </tr>
+                    <tr> 
+                        <td> 1999</td>
+                        <td> 35</td>
+                    </tr>
+                    <tr> 
+                        <td> 2000</td>
+                        <td> 40</td>
+                    </tr>
+                   </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">UK</td>
+                   <td> 
+                    <tr> 
+                        <td> 1998</td>
+                        <td> 25</td>
+                    </tr>
+                    <tr> 
+                        <td> 1999</td>
+                        <td> 30</td>
+                    </tr>
+                    <tr> 
+                        <td> 2000</td>
+                        <td> 35</td>
+                    </tr>
+                   </td>
+                </tr>
+            
+                
+        </table>
+    </div>
+    <hr>
+    <div class="Tab2" style="margin: 0 40%;">
+        <a href="./FrameSet2/frameset2.html" id="aFrame">FRAME SET2 Answer!!!</a>
+    </div>
+    <hr>
+    <div  class="linkContainer">
+        <a href="./RedPage.html" style="text-align: center;font-size:large;">Red Page Answer!!!</a>
+    </div>
+    <hr>
+    <div  class="TextTypes">
+        This text is Simple<br>
+        <b>This Text is Bold</b><br>
+        <i>This Text is Italic</i><br>
+        <u>This Text is Underlined</u><br>
+        <b><i><u>This Text is Bold Italic Underlined</u></i></b>
+</div>
+    
+
+    
+</body>
+<script>
+    function setfilename(val)
+   {
+     var fileName = val.substr(val.lastIndexOf("\\")+1, val.length);
+    document.getElementById("filename").value = fileName;
+   }
+ </script>
+</html>
