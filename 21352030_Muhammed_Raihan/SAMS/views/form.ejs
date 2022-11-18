@@ -1,0 +1,81 @@
+<!--register.html-->
+
+<html lang="en">
+
+<head>
+  <title>Assignment by Raihan</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    function CheckEmpty() {
+      var x= document.getElementById("rname").value;
+      var y= document.getElementById("reg").value;
+      var z= document.getElementById("imail").value;
+      var a= document.getElementById("pmail").value;
+      var b= document.getElementById("phone").value;
+      if (x == ""||y == ""||z == ""||a == ""||b == "") {
+        alert("Fill all the fields");
+        return false;
+      };
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <div id="navbar">
+      <a href="/"><button class="navbtn mrgn" id="home"><i class="fa fa-home"></i>&nbsp; Home</button></a>
+    </div>
+  </div><br>
+  <h2>
+    Register
+  </h2>
+  <div class="frm">
+    <form action="/register" method="post">
+      <div class="left">
+        <br>
+        <div>
+          <label> Full Name</label>
+        </div>
+        <div>
+          <label> Register Number</label>
+        </div>
+        <div>
+          <label> Institution Email</label>
+        </div>
+        <div>
+          <label> Personal Email</label>
+        </div>
+        <div>
+          <label> Phone </label>
+        </div>
+      </div>
+      <div class="right">
+        <br>
+        <div>
+          <input type="textbox" id="rname" name="rname">
+        </div>
+        <div>
+          <input type="textbox" id="reg" name="reg">
+        </div>
+        <div>
+          <input type="textbox" id="imail" name="imail">
+        </div>
+        <div>
+          <input type="textbox" id="pmail" name="pmail">
+        </div>
+        <div>
+          <input type="textbox" id="phone" name="phone">
+        </div>
+        <div>
+          <a href="/"><button class="btn" value="submit" onClick="return CheckEmpty()"
+              type="submit">Register</button></a>
+        </div>
+      </div><br>
+    </form>
+  </div>
+</body>
+
+</html>
