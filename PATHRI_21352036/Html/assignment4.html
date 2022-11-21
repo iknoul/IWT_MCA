@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      function alertFilename()
+      {
+          var thefile = document.getElementById('thefile');
+      }
+      function fun(){  
+      document.getElementById("myForm").reset();  
+ }   
+  </script>
+</head>
+<body>
+  <div id="frame">
+      <div id="as41">
+        <h1 id="as42">Registration Form</h1>
+      <form class="as43" id="myForm">
+        <label for="fname">Enter Name of Your Friend</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="fname">Choose the File you want to post to your Friend</label>
+        <input type="file" id="thefile" style="display: none;"  />
+        <input type="button" value="Browse..." onclick="document.getElementById('thefile').click();" /><br><br>
+        <label for="fname">What does the File Contains?</label><br><br>
+        <input type="checkbox" id="fname" name="fname" value="Image">
+        <label for="fname"> Image</label>
+        <input type="checkbox" id="fname" name="fname" value="Source Code">
+        <label for="fname"> Source Code</label>
+        <input type="checkbox" id="fname" name="fname" value="Binary Code">
+        <label for="fname"> Binary Code</label><br><br>
+        <label for="fname">You have Completed the form:</label>
+        <button type="submit" onclick="fun()">Submit Query</button>
+        <br><br>
+      </form>
+      </div>
+    </div>
+</body>
+</html>
