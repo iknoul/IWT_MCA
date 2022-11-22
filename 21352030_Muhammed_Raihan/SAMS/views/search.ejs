@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Assignment by Raihan</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div>
+        <div id="navbar">
+            <a href="/"><button class="navbtn" id="home"><i class="fa fa-home"></i>&nbsp; Home</button></a>
+        </div>
+    </div>
+    <form action="/search" method="POST">
+        <div align="center" style="margin-top: 100px;font-size: xx-large;">
+            <i class="fa fa-search icon"></i>
+            <span><b>Search</b></span><br>
+            <input style="text-align:center ;" type="text" placeholder="Enter Register Number" id="search"
+                name="search" />
+            <button type="submit" class="btn">Search</button>
+        </div><br>
+    </form>
+    <form action="/edit" method="post" id="editform">
+        <table id="myTable" name="myTable">
+            <thead>
+                <% if(data.length){%>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <td><input id="n" name="n" class="lf" disabled value="<%- data[0].name%>" />
+                            <i id="i1" class="fa fa-edit icon" ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Register No</th>
+                        <td><input id="r" name="r" disabled value="<%- data[0].reg_no%>">
+                            <input hidden id="r1" name="r1" value="<%- data[0].reg_no%>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Institution Mail</th>
+                        <td><input id="i" name="i" class="lf" disabled value="<%- data[0].institution_mail%>">
+                            <i id="i2" class="fa fa-edit icon" ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Personal Mail</th>
+                        <td><input id="p" name="p" class="lf" disabled value="<%- data[0].personal_mail%>">
+                            <i id="i3" class="fa fa-edit icon" ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Phone No</th>
+                        <td><input id="f" name="f" class="lf" disabled value="<%- data[0].phone%>">
+                            <i id="i4" class="fa fa-edit icon" ></i>
+                        </td>
+                    </tr>
+            </thead>
+            <% } if(isFound==0){ %>
+                <tr>
+                    <td>Student Not Found!</td>
+                </tr>
+                <% } %>
+
+        </table>
+    </form>
+    <% if(data.length){%>
+        <form id="delform" action="/delete<%- data[0].reg_no%>" method="post">
+            <input id="reg" type="text" hidden value="<%- data[0].reg_no%>">
+        </form>
+        <%}if(isFound==1){ %>
+
+            <h2><div id="btndiv">
+                <button id="edit" class="btngr" onclick="edit();">Edit</button>
+                <button id="upd" type="submit" class="btngr" hidden
+                    onclick="document.getElementById('editform').submit()">Update</button>
+                <button id="del" class="btnred" onclick="delet();">Delete</button>
+                <button id="delcfm" type="submit" class="btnred" hidden
+                    onclick="document.getElementById('delform').submit()">DELETE ?</button>
+                <button id="cancel" class="btn" hidden onclick="cancel()">Cancel</button>
+            </div></h2>
+            <% } %>
+</body>
+<script>
+    function edit() {
+        document.getElementById("n").disabled = false;
+        document.getElementById("i").disabled = false;
+        document.getElementById("p").disabled = false;
+        document.getElementById("f").disabled = false;
+        document.getElementById("edit").hidden = true;
+        document.getElementById("del").hidden = true;
+        document.getElementById("upd").hidden = false;
+        document.getElementById("cancel").hidden = false;
+        document.getElementById("i1").style.display = "block";
+        document.getElementById("i2").style.display = "block";
+        document.getElementById("i3").style.display = "block";
+        document.getElementById("i4").style.display = "block";
+    }
+    function cancel() {
+        document.getElementById("n").disabled = true;
+        document.getElementById("i").disabled = true;
+        document.getElementById("p").disabled = true;
+        document.getElementById("f").disabled = true;
+        document.getElementById("edit").hidden = false;
+        document.getElementById("del").hidden = false;
+        document.getElementById("upd").hidden = true;
+        document.getElementById("cancel").hidden = true;
+        document.getElementById("delcfm").hidden = true;
+        document.getElementById("i1").style.display = "none";
+        document.getElementById("i2").style.display = "none";
+        document.getElementById("i3").style.display = "none";
+        document.getElementById("i4").style.display = "none";
+    }
+    function delet() {
+        document.getElementById("edit").hidden = true;
+        document.getElementById("del").hidden = true;
+        document.getElementById("delcfm").hidden = false;
+        document.getElementById("cancel").hidden = false;
+    }
+</script>
+
+</html>
