@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    html{
+        background-color:rgb(169, 18, 134);
+       }
+       </style>
+</head>
+<body>
+   <div class="container">
+      <form action="/updatesearch"  >
+   <h3>SEARCH STUDENT</h3>
+   
+    <hr>
+ 
+    <label for="regno"><b>Register Number</b></label>
+    <input type="regno" placeholder="register no to be searched" name="regno" id="regno" required><br>
+
+    <br><button type="submit" class="regbtn">SEARCH STUDENT</button>
+    
+
+    <br>
+    
+    {{#if umesg}}
+        <h3>Data updated!!!</h3>
+        {{/if}}
+
+
+     {{#if mesg2}}
+     <h3>Data Not Found!</h3>
+     {{/if}}
+    </form>
+  </div> 
+
+
+  <!--search form design end-->
+
+
+  {{#if mesg1}}
+<div class="container">
+        <form action="/updatestudent" >
+            <br><h3>UPDATE STUDENT</h3>
+
+        <hr>
+        {{#data}}
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" value="{{name}}" id="name" required>
+
+        <label for="regno"><b>Register Number</b></label>
+        <input type="text" placeholder="Enter Register Number" name="regno" value="{{regno}}" id="regno" required readonly>
+
+        <label for="i_email"><b>Instituional_email</b></label>
+        <input type="text" placeholder="Enter Instituional_email" name="iemail" value="{{Institutional_Email}}" id="imail" required>
+
+        <label for="p_email"><b>Personal_email</b></label>
+        <input type="text" placeholder="Enter Personal_email" name="pemail" value="{{Personal_Email}}" id="pmail" required>
+
+        <label for="mobile"><b>Mobile Number</b></label>
+        <input type="text" placeholder="Enter Mobile Number" name="mobile" value="{{Mobile}}" id="mobile" required><br>
+
+        <br><button type="submit" class="regbtn">UPDATE STUDENT</button>
+        {{/data}}
+
+        <a href="/form" style="color:black">BACK</a><br>
+
+        
+
+        </form>
+    </div>
+  {{/if}}
+</body>
+</html>
+<a href="/back"><br><button>back</button></a>
