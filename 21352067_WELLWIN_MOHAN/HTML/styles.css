@@ -1,0 +1,31 @@
+body{
+    background-color:brown ;
+}
+h1{
+    color:white;
+    
+}
+h2{
+    color:blue;
+}
+table{
+    border: 1px solid red;
+    border-collapse: collapse;
+    background-color: blue;
+}
+th,td{
+    text-align: center;
+    padding:10px
+}
+caption{
+    color: aqua;
+}
+th{
+    color: aqua;
+}
+td{
+    color:black;
+}
+a:hover{
+    color:red;
+}

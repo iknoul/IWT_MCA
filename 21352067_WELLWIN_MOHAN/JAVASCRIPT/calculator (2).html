@@ -1,0 +1,58 @@
+<html>
+<head>
+<center>
+<form name ="myform">
+<b>enter A value:</b>
+<input type ="text" name="txta"><br><br>
+<b>enter B value:</b>
+<input type ="text" name="txtb"><br><br>
+<input type="button" value="add" onclick ="add()"/>
+<input type="button" value="multiply" onclick ="multiply()"/>
+<input type="button" value="subtract" onclick ="subtract()"/>
+<input type="button" value="divide" onclick ="divide()"/>
+
+<b><br><br>result</b>
+<input type ="text" name="txtc">
+</form>
+</center>
+<script type ="text/javascript" >
+function add() {
+var a,b,c;
+a=document.myform.txta.value;
+b=document.myform.txtb.value;
+a=parseInt(a);
+b=parseInt(b);
+c=a+b;
+document.myform.txtc.value =c;
+}
+function multiply() {
+var a,b,c;
+a=document.myform.txta.value;
+b=document.myform.txtb.value;
+a=parseInt(a);
+b=parseInt(b);
+c=a*b;
+document.myform.txtc.value =c;
+}
+function subtract() {
+var a,b,c;
+a=document.myform.txta.value;
+b=document.myform.txtb.value;
+a=parseInt(a);
+b=parseInt(b);
+c=a-b;
+document.myform.txtc.value =c;
+}
+function divide() {
+var a,b,c;
+a=document.myform.txta.value;
+b=document.myform.txtb.value;
+a=parseInt(a);
+b=parseInt(b);
+c=a/b;
+document.myform.txtc.value =c;
+}
+
+</script>
+</head>
+</html>
