@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi Frames</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+      }
+      h2,
+      h3 {
+        font-weight: bold;
+      }
+      ul {
+        text-align: left;
+        padding-left: 150px;
+      }
+      img {
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .row {
+        font-family: sans-serif;
+      }
+      .A {
+        background-color: #fe8737;
+        padding: 1%;
+        height: 100px;
+      }
+      .B {
+        background-color: #ffd9ce;
+        padding: 0.95%;
+        height: 200px;
+        width: 48%;
+        float: left;
+      }
+      .C {
+        background-color: #ffeee7;
+        padding: 0.95%;
+        height: 200px;
+        width: 31.3%;
+        float: left;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      .blink {
+        animation: blnk 2s linear infinite;
+        font-size: 3em;
+        color: #880000;
+      }
+      @keyframes blnk {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 0.75;
+        }
+        100% {
+          opacity: 0.5;
+        }
+      }
+      .mrg {
+        margin-right: 0.2%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="row">
+        <div class="A">
+          <h2>NAVANEETHAKRISHNAN S</h2>
+          <p>SPV nagar, Puducherry-11.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="B mrg">
+          <h3>Qualifications</h3>
+          <ul>
+            <li>SSLC - 86%</li>
+            <li>HSC - 65%</li>
+            <li>B.C.A - 83%</li>
+          </ul>
+        </div>
+        <div class="B">
+          <h3>Popular sites</h3>
+          <ul>
+            <li>
+              <a href="https://www.coursera.org/" target="_blank">coursera</a>
+            </li>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="C mrg scroll">
+          <h3>Scrolling message</h3>
+          HTML: HTML stands for HyperText Markup Language. It is used to design
+          the front end portion of web pages using markup language. It acts as a
+          skeleton for a website since it is used to make the structure of a
+          website. CSS: Cascading Style Sheets fondly referred to as CSS is a
+          simply designed language intended to simplify the process of making
+          web pages presentable. It is used to style our website. JavaScript:
+          JavaScript is a scripting language used to provide a dynamic behavior
+          to our website. Bootstrap: Bootstrap is a free and open-source tool
+          collection for creating responsive websites and web applications. It
+          is the most popular CSS framework for developing responsive,
+          mobile-first websites. Nowadays, the websites are perfect for all the
+          browsers (IE, Firefox, and Chrome) and for all sizes of screens
+          (Desktop, Tablets, Phablets, and Phones).
+        </div>
+        <div class="C mrg"><h3 class="blink">PONDICHERRY UNIVERSITY</h3></div>
+        <div class="C"><img src="ocean.jpg" width="300" height="400" /></div>
+      </div>
+    </div>
+  </body>
+</html>

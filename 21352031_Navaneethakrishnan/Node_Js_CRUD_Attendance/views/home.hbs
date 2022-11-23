@@ -1,0 +1,57 @@
+<h3>IWT LAB EXERCISE</h3>
+<center>
+
+    <a href="/adduser" class="addbtn">Add User</a>
+    
+</center>
+
+<TABLE>
+    <thead>
+        <tr>
+          
+            <td>NAME</td>
+            <td>REGISTER NUMBER</td>
+            <td>INSTITUTIONAL MAIL ID</td>
+            <td>PERSONAL MAIL ID</td>
+            <td>MOBILE</td>
+            <td style="width:90%">INTERNAL MARK</td>
+            <td>EDIT USER</td>
+            <td>ATTENDANCE</td>
+            <td>DELETE USER</td>
+            {{!-- <td>DATE</td> --}}
+            
+             {{!-- <td>DELETE USER</td>             --}}
+        </tr>
+        
+    </thead>
+    <tbody>
+{{#each rows}}
+    <tr>
+       
+        <td>{{this.Name}}</td>
+        <td>{{this.RegisterNumber}}</td>
+        <td>{{this.InstitutionalEmail}}</td>
+        <td>{{this.PersonalEmail}}</td>
+        <td>{{this.Mobile}}</td>
+        <td><a class="internalMarks" href="/internalMark/{{this.ID}}">INTERNAL MARK</a></td>
+        <td><a class="edit" href="/edituser/{{this.ID}}">EDIT</a></td>
+        <td><a class="mark_attendance" href="/attendance/{{this.ID}}">ATTENDANCE</a></td> 
+        
+       {{!-- <form action="/home/{{this.ID}}" method="post" autocomplete="false">
+            <td>
+                <input type="radio" id="present" name="attendance" value="PRESENT">
+                <label for="present">PRESENT</label><br>
+                <input type="radio" id="absent" name="attendance" value="ABSENT">
+                <label for="absent">ABSENT</label><br>
+            </td>
+            <td colspan="2" style="width:15%"><a class="mark_attendance" href="/home/{{this.ID}}">ATTENDANCE</a></td>
+        </form>
+            <td>{{this.Attendance}}</td> --}}
+       
+
+        <td><a onclick="return confirm('Are you sure? you want to delete?')" class="delete" href="/deleteuser/{{this.ID}}">DELETE</a></td>
+        {{!-- <td>{{this.2022-10-30}}</td> --}}
+    </tr>
+{{/each}}
+    </tbody>
+</TABLE>

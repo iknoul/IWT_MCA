@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="controlPanel">
+  <h5 id="on" class="button">on</h5>
+  <h5 id="off" class="button">off</h5>
+ </div>
+<div id="traffic-light">
+    <div id="stopLight" class="bulb"><br><br>stop</div> 
+   <div id="slowLight"class="bulb1"><br><br>wait</div>
+ <div id="goLight" class="bulb2"><br><br>Go!</div>
+
+</div>
+<br>
+<div id="traffic-light1">
+</div>
+<div id="traffic-light2">
+</div>
+<div id="traffic-light3">
+</div>
+
+
+
+
+<style type="text/css">
+	body {
+  font-family: sans-serif;
+}
+
+#controlPanel {
+  float: left;
+  padding-top: 30px;
+}
+
+.button {
+  background-color: white;
+  color: white;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+  margin: 90px 40px;
+  cursor: pointer;
+}
+
+#traffic-light {
+  height: 400px;
+  width: 150px;
+  float: left;
+  background-color: #333;
+  border-radius: 40px;
+  margin: 30px 0;
+  padding: 10px;
+  font-size: 20px;
+  color:black;
+  text-align: center;
+}
+#traffic-light1 {
+  height: 900px;
+  width: 10px;
+  background-color: brown;
+  border-radius: 40px;
+  margin: 10px ;
+  font-size: 20px;
+  margin-left: 20px; 
+  color:black;
+  text-align: center;
+}
+#traffic-light2 {
+     width: 140px;
+     height: 10px;
+     background-color: brown;
+     border-radius: 40px;
+     margin: 0px;
+     margin-left: 20px;
+     margin-top: -900px;
+  
+
+  
+}
+#traffic-light3 {
+    width: 130px;
+    height: 10px;
+    background-color: brown;
+    border-radius: 40px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 300px;
+    
+}
+
+.bulb {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 15px auto;
+  font-size: 20px;
+  display: block;
+    
+  
+  }
+.bulb1 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 15px auto;
+    font-size: 20px;
+    display: block;
+    
+    }
+.bulb2 {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        border-radius: 50%;
+        margin: 15px auto;
+        font-size: 20px;
+        }
+      
+  
+</style>
+<script type="text/javascript">
+	    var stop=document.getElementById("stopLight");
+    var wait=document.getElementById("slowLight");
+    var go=document.getElementById("goLight");
+    
+    stop.style.opacity=1;
+    setTimeout(function () {
+
+        stop.style.opacity=.3;
+        wait.style.opacity=.3;
+        go.style.opacity=1;
+        go.style.background="green"
+
+    },12000);
+
+    setTimeout(function () {
+        stop.style.opacity=.3;
+        wait.style.opacity=1;
+        wait.style.background="yellow"
+        go.style.opacity=.3;
+    },7000);
+
+    setTimeout(function () {
+        stop.style.opacity=1;
+        wait.style.opacity=.3;
+        go.style.opacity=.3;
+        stop.style.background="red"
+
+    },5000);
+
+
+	</script>
+</body>
+</html>
