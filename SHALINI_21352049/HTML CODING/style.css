@@ -1,0 +1,117 @@
+#ab1{
+    padding-left: 35%;
+}
+.a1{
+    border: 2px solid black;
+	border-collapse: collapse;
+}
+#a1{
+    text-align: center;
+}
+#frame{
+    width: 100%;
+    display: flex;
+    /*text-align: center;*/
+    align-items: center;
+    justify-content: center;
+}
+#as41{
+    width:50%;
+    height:330px;
+    border:3px solid black;
+    background-color: rgba(196, 191, 191, 0.295);
+}
+#as42{
+    text-align: center;
+}
+.as43{
+    padding-top:30px;
+    padding-left: 15px;
+}
+.as51{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+#as52{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(230, 57, 0);
+    border-bottom: 5px solid whitesmoke;
+}
+#as53{
+    width: 49.9%;
+    height:100px;
+    float: left;
+    background-color:pink ;
+    border-bottom: 5px solid whitesmoke;
+}
+#as54{
+    width: 49.9%;
+    height:100px;
+    float: left;
+    background-color:pink ;
+    border-left: 2px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+}
+#as55{
+    width: 33.2%;
+    height:100px;
+    background-color:rgba(255, 210, 218, 0.872);
+    float: left;
+    border-right: 2px solid whitesmoke;
+}
+#as56{
+    width: 33.2%;
+    height:100px;
+    background-color:rgba(255, 210, 218, 0.872);
+    float: left;
+    border-right: 2px solid whitesmoke;
+}
+#as57{
+    width: 33.3%;
+    height:100px;
+    background-color:rgba(255, 210, 218, 0.872);
+    float: left;
+}
+#as31{
+    width: 50%;
+    color:white; 
+    text-align: center;
+}
+#as32{
+    width: 100%;
+    height:100px;
+    background-color: rgb(255, 0, 0);
+    display:flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#as33{
+    width: 50%;
+    height:200px;
+    background-color: rgb(190, 93, 58);
+    float: left;
+    border-right: 1px solid black;
+    display:flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#as34{
+    width: 49.85%;
+    height:200px;
+    background-color: rgb(190, 93, 58);
+    float: left;
+    display:flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#as11{
+    margin-left: 40%;
+}

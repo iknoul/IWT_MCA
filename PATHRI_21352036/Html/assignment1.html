@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment 1</title>
+	<style>
+		
+	</style>
+	<script>
+		function fun(){  
+      		document.getElementsByClassName("myForm").reset();
+		}
+	</script>
+</head>
+<body>
+	<section>
+		<div id="as11">
+			<form class="myForm">
+			<table>
+				<tr>
+					<th colspan="2">Registration Form</th>
+				</tr>
+				<tr>
+					<td><label for="uname">UserName</label></td>
+					<td><input type="text" id="uname"></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password</label></td>
+					<td><input type="text" id="password"></td>
+				</tr>
+				<tr>
+					<td><label for="cpass">Confirm Password</label></td>
+					<td><input type="text" id="cpass"></td>
+				</tr>
+				<tr>
+					<td><label for="fname">FirstName</label></td>
+					<td><input type="text" id="fname"></td>
+				</tr>
+				<tr>
+					<td><label for="lname">LastName</label></td>
+					<td><input type="text" id="lname"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input type="text" id="email"></td>
+				</tr>
+				<tr>
+					<td><label for="pno">Phone Number</label></td>
+					<td><input type="text" id="pno"></td>
+				</tr>
+				<tr>
+					<td><label for="location">Location</label></td>
+					<td><input type="text" id="location"></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="padding-left:35%">
+						<button type="submit" onclick="fun()">Save</button>
+						<button type="reset" onclick="fun()">Reset</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</div>
+	</section>
+</body>
+</html>

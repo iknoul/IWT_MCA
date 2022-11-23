@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Assignment by Raihan</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div><br>
+        <div>
+            <h1>
+                Student Attendance
+            </h1>
+        </div>
+        <div id="navbar">
+            <a href="/"><button class="navbtn" id="home"><i class="fa fa-home"></i>&nbsp; Home</button></a>
+        </div>
+    </div>
+    <div class="lf">
+    <form action="/attendance" method="POST" >
+        <div class="lf">
+            <p>&nbsp&nbspDate :<input name="datein" id="datein" class="div1" type="date"
+                    onchange="upd();this.form.submit();" value=<%-mydate%> ></p>
+        </div>
+        <div style="padding: 15px;">
+            &nbsp&nbspSub :<select id="sub" class="div1" name="sub" onchange="upd();this.form.submit();">
+                <option value="IWT" <%if(mysub=='IWT' ){%>selected<% } %> >IWT</option>
+                <option value="MCS" <%if(mysub=='MCS' ){%>selected<% } %> >MCS</option>
+                <option value="SWE" <%if(mysub=='SWE' ){%>selected<% } %> >SWE</option>
+            </select>
+        </div>
+    </form></div>
+    <h2 style="text-align: right;margin-right: 20px;"><a href="/attenupdate"><button class="btn big">Update</button></a></h2>
+
+    <table id="mainTable" name="mainTable">
+        <thead>
+            <th scope="col">Name</th>
+            <th scope="col">Register No</th>
+            <th scope="col">Attendance</th>
+            <%if(data.length){ for(var i=0; i< data.length; i++) {%>
+                <tr>
+                    <td name="name">
+                        <%- data[i].name%>
+                    </td>
+                    <td name="reg">
+                        <%- data[i].reg_no%>
+                    </td>
+                    <td class="col-xs">
+                        <% for(var j=0; j< data2.length; j++) {if(data2[j].reg_no==data[i].reg_no){%>
+                            <%- data2[j].attd%>
+                                <% } }%>
+                    </td>
+
+                </tr>
+        </thead>
+        <% } }else{ %>
+            <tr>
+                <td>No data .</td>
+            </tr>
+            <% } %>
+
+    </table>
+</body>
+
+<script>
+    function upd() {
+        var e = document.getElementById("sub");
+        var strUser = e.options[e.selectedIndex].value;
+    }
+</script>
+
+</html>

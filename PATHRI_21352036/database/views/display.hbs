@@ -1,0 +1,56 @@
+<html>
+<head>
+
+<style>
+.table{
+	border-radius:50;
+    
+    width: 90%;
+
+}
+body{
+    
+background-color: rgb(104, 56, 245);
+}
+
+</style>
+</head>
+<body>
+
+<center>
+<table id="sample_data" class="table" name="example" border=2>
+<thead>
+
+
+<th scope="col">Name</th>
+<th scope="col">Register No</th>
+<th  scope="col">Institution Mail</th>
+<th  scope="col">Personal Mail</th>
+<th  scope="col">Phone No</th>
+
+   {{#data}}
+<tr>
+   
+  
+            <td>{{this.name}}</td>
+            <td>{{this.regno}}</td>
+            <td>{{this.Institutional_Email}}</td>
+            <td>{{this.Personal_Email}}</td>
+            <td>{{this.Mobile}}</td>
+            
+            
+            
+
+
+</tr>
+{{/data}}
+
+ 
+
+
+</table>
+</form>
+
+
+</body>
+<a href="/back"><button>back</button></a>
