@@ -1,0 +1,63 @@
+<h1><center>{{title}}</h1>
+<center>
+
+<style>
+    table,th,td{
+       border:1px solid black;
+       border-collapse:collapse}
+       th,td{
+        padding:15px;
+        text-allign:left;
+        
+       }
+       html{
+        background-color:rgb(141, 11, 141);
+       }
+       table{
+        background-color: grey;
+       }
+
+</style>
+
+<body>
+<center>
+        
+         <div class="container">
+        <form action="/addstudent" >
+            <h3>ADD STUDENT</h3>
+
+        <hr>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+        <label for="regno"><b>Register Number</b></label>
+        <input type="text" placeholder="Enter Register Number" name="regno" id="regno" required>
+
+        <label for="i_email"><b>Instituional_email</b></label>
+        <input type="text" placeholder="Enter Instituional_email" name="iemail" id="iemail" required>
+
+        <label for="p_email"><b>Personal_email</b></label>
+        <input type="text" placeholder="Enter Personal_email" name="pemail" id="pemail" required>
+
+        <label for="mobile"><b>Mobile Number</b></label>
+        <input type="text" placeholder="Enter Mobile Number" name="mobile" id="mobile" required><br><br>
+
+        <br><button type="submit" class="regbtn">ADD STUDENT</button>
+
+        
+
+        {{#if mesg5}}
+     <h3>Data inserted</h3>
+     {{/if}}
+
+
+        {{#if checkmesg}}
+        <h3> Regno or iemail or pemail or mobileno already present!!!</h3>
+        {{/if}}
+        </form>
+    </div>
+     </center>
+     </body>
+</html>
+<a href="/back"><br> <button>back</button></a><br>
+        

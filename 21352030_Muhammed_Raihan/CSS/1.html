@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Assignment by Raihan</title>
+  <style>
+    .trafficLight {
+      margin: auto;
+      margin-top: 50px;
+      background-color: black;
+      width: 170px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5px;
+      border-radius: 10px;
+    }
+
+    .trafficLight span {
+      margin: 2px;
+      width: 140px;
+      height: 160px;
+      border-radius: 100%;
+    }
+
+    .red {
+      background: red;
+      animation: 13s red infinite;
+    }
+
+    .yellow {
+      background: yellow;
+      animation: 13s yellow infinite;
+    }
+
+    .green {
+      background: green;
+      animation: 13s green infinite;
+    }
+
+    @keyframes red {
+      0% {
+        opacity: .1
+      }
+
+      5% {
+        opacity: 1
+      }
+
+      20% {
+        opacity: 1
+      }
+
+      40% {
+        opacity: .1
+      }
+
+      60% {
+        opacity: .1
+      }
+
+      80% {
+        opacity: .1
+      }
+
+      100% {
+        opacity: .1
+      }
+    }
+
+    @keyframes yellow {
+      0% {
+        opacity: .1
+      }
+
+      20% {
+        opacity: .1
+      }
+
+      40% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .1
+      }
+
+      60% {
+        opacity: .1
+      }
+
+      80% {
+        opacity: .1
+      }
+
+      100% {
+        opacity: 1
+      }
+    }
+
+    @keyframes green {
+      0% {
+        opacity: .1
+      }
+
+      40% {
+        opacity: .1
+      }
+
+      60% {
+        opacity: 1
+      }
+
+      80% {
+        opacity: 1
+      }
+
+      83% {
+        opacity: .1
+      }
+
+      100% {
+        opacity: .1
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color:rgb(51, 55, 59)">
+  <div class="trafficLight">
+    <span class="red"></span>
+    <span class="yellow"></span>
+    <span class="green"></span>
+  </div>
+</body>
+
+</html>

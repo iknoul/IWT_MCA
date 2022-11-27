@@ -1,0 +1,80 @@
+#blink{
+    background-color: red;
+    font-size: 50px;
+    color: green;
+}
+#marq{
+    font-size: 15px;
+    color: black;
+}
+
+#box{
+    text-align: center;
+    border: 1px solid black;
+    border-width: thin;
+    width: 450px;
+}
+
+.label{
+    display: inline-block;
+    width:130px;
+}
+
+#topframe{
+    background-color: rgb(223, 187, 173);
+}
+.framerow1{
+    background-color: rgb(217, 158, 158);
+}
+.framerow2{
+    background-color: rgb(248, 226, 226);
+}
+#framerow3{
+    border: black 1px solid;
+}
+
+#image{
+    width: 500px;
+    height: 250px;
+}
+
+#upper_frame{
+    color: white;
+
+}
+#Topframe{
+    background-color: red;
+}
+.topframe{
+    background-color : orangered
+}
+.frame3{
+    text-align: center;
+    color: white;
+
+}
+
+table,td,th{
+    border: 1px solid black;
+    width: 500px;
+    border-collapse: collapse;
+    text-align: center;
+}
+.td1{
+    text-align: center;
+}
+
+#bold{
+    font-weight: bold;
+}
+#underline{
+    text-decoration: underline;
+}
+#italic{
+    font-style: italic;
+}
+#all{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {background-color:rgb(246,228,210);}
+#blink{
+text-align:center;
+font-family:sans-serif;
+font-weight:semibold;
+color:royalblue;
+}
+</style>
+</head>
+<body>
+    <p id ="blink">
+        Email: jayasrisambathcoumar@gmail.com<br>
+        DOB: 11/06/2001
+    </p>
+    <script type="text/javascript">
+        var blink=document.getElementById('blink');
+        setInterval(function(){
+        blink.style.opacity=(blink.style.opacity ==0?1:0);
+        },1000);
+        </script>
+</body>
+</html>

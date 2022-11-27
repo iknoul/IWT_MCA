@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunc()">Click</button>
+    <p id="hlw"></p>
+    <script>
+        function myfunc() {
+            var name=prompt("Enter anything");
+            let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+            var t=parseInt(name);
+            if (name.match(reg)) {
+                document.getElementById("hlw").innerHTML=""+name+" is a character";
+            }
+            else{
+                document.getElementById("hlw").innerHTML=""+name+" is a number"; 
+            }
+            
+        }
+    </script>
+</body>
+</html>
