@@ -1,0 +1,75 @@
+<html>
+<head>
+  
+  <style>
+    .tb{
+      
+      padding: 10px;
+      margin: 50px;
+      color: black;
+      background-color: antiquewhite;
+    }
+    #butt{
+    background-color: black;
+    color: azure;
+    width: 60px;
+    height: 30px;
+    
+}
+    
+    
+  </style>
+
+</head>
+<body >
+  <h1><center>Attendance Sheet</center></h1>
+<form action="/attendence" method="POST">
+<div>
+
+</div>
+<table id="sample_data" name="example"border = "4" cellpadding = "5" cellspacing = "0" class="tb">
+<thead>
+
+<th scope="con">Sl.No</th>
+<th scope="col">Name</th>
+<th scope="col">Register No</th>
+<th  scope="col">Institution Mail</th>
+<th  scope="col">Personal Mail</th>
+<th  scope="col">Phone No</th><th scope="col" id="date"><p id="date"></p></th>
+  <% if(data.length){ for(var i = 0; i< data.length; i++) {%>
+<tr>
+  <th scope="row"><%= (i+1) %></th>
+            <td><%- data[i].Name%></td>
+            <td><%- data[i].Reg_Number%></td>
+            <td><%- data[i].I_Email%></td>
+            <td><%- data[i].P_Email%></td>
+            <td><%- data[i].Mobile%></td>
+            <td>
+            <div id="">
+            <input type="radio"  name="<%- data[i].Reg_Number%>" value="1" checked>P<p></p>
+            <input type="radio"   name="<%- data[i].Reg_Number%>" value="0" >A</td>
+            </div >
+
+</tr>
+</thead>
+ <% } }else{ %>
+          <tr>
+            <td>No data ever existed.</td>
+          </tr>
+          <% } %>
+          <tr><td colspan=2><button id="butt" type="submit" id="btn">Submit</button></td></tr>
+ 
+
+
+</table>
+</form>
+
+</body>
+
+<script>
+document.getElementById("date").innerHTML = Date();
+
+
+
+</script>
+</html>
