@@ -1,0 +1,36 @@
+<h3>ADD NEW STUDENT</h3>
+
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+<form action="/adduser" method="post" autocomplete="false">
+<div class = "form-group">
+    <label for="name">NAME</label>
+    <input type="text" autocomplete="off" name = "name">
+</div>
+
+<div class = "form-group">
+    <label for="registerNumber">REGISTER NUMBER</label>
+    <input type="number" autocomplete="off" name = "registerNumber">
+</div>
+
+<div class = "form-group">
+    <label for="InstitutionalMail">INSTITUTIONAL MAIL ID</label>
+    <input type="email" autocomplete="off" name = "InstitutionalMail">
+</div>
+
+<div class = "form-group">
+    <label for="personalMail">PERSONAL MAIL ID</label>
+    <input type="email" autocomplete="off" name = "personalMail">
+</div>
+
+<div class = "form-group">
+    <label for="mobile">MOBILE</label>
+    <input type="number" autocomplete="off" name = "mobile">
+</div>
+
+<div class = "form-group">
+    <button type="submit">Save Details</button>
+    <a class="viewAll" href="/">View All</a>
+</div>
+</form>

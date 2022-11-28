@@ -1,0 +1,66 @@
+<h1><center>{{title}}</h1>
+<center>
+<form action="/searchaction" method="post">
+
+<label for="reg">Register number:</label>
+<input type="text" id="reg" name="reg">
+<button>Search</button>
+
+
+</form>
+<style>
+    table,th,td{
+        border:1px solid black;
+       border-collapse:collapse}
+       th,td{
+        padding:15px;
+        text-allign:left;
+       }
+       
+       html{
+        background-color:rgb(106, 24, 188);
+
+       }
+       table{
+        background-color: rgb(156, 12, 130);
+       }
+
+</style>
+<center>
+<br><table>
+    
+    <tbody>
+        {{#each sampledata}}
+        <tr>
+            <td>Register Number:</td>
+            <td>{{this.regno}}</td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td>{{this.name}}</td>
+        </tr>
+        <tr>
+            <td>Instituitional Email id:</td>
+            <td>{{this.Institutional_Email}}</td>
+        </tr>
+        <tr>
+            <td>Personal Email id:</td>
+            <td>{{this.Personal_Email}}</td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td>{{this.Mobile}}</td>
+        </tr>
+        
+        
+        {{/each}}
+        
+    </tbody>
+</table>
+<br>
+<a href="/display"><button>View</button></a>
+<a href="/table"><button>Attendence</button></a>
+<a href="/edit"><button>Edit</button></a>
+<a href="/add"><button>Insert</button></a>
+<a href="/delete"><button>Delete</button></a>
+

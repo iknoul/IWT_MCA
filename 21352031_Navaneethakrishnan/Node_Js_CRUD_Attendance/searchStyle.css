@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(208, 243, 247);
+    justify-content: center;
+}
+
+.searchDiv{
+    
+    justify-content: center;
+    font-size: 18px;
+    width: 665px;
+    color: white;
+    background-color:  rgb(5, 122, 168);
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+    /* rgb(5, 122, 168); */
+
+}
+.takeAttndance{
+    justify-content: center;
+    font-size: 18px;
+    width: 665px;
+    color: white;
+    background-color:  rgb(5, 122, 168);
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.view{
+    justify-content: center;
+    font-size: 18px;
+    width: 665px;
+    color: white;
+    background-color:  rgb(5, 122, 168);
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.viewAttndance{
+    justify-content: center;
+    font-size: 18px;
+    width: 665px;
+    color: white;
+    background-color:  rgb(5, 122, 168);
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+input,select{
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: skyblue;
+    color: black;
+}
+
+#subject{
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: skyblue;
+    color: black;
+}
+#faculty{
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: skyblue;
+    color: black;
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    /* border-collapse: collapse; */
+    border: 1px solid;
+    table-layout:fixed;
+    
+    overflow:hidden;
+    word-wrap:break-word;
+}
+table td{
+    border: 1px solid #afafaf;
+}
+
+table thead td{
+    padding: 5px;
+    background-color: rgb(5, 122, 168);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+
+    table-layout:fixed;
+    width:20px;
+    overflow:hidden;
+    word-wrap:break-word;
+}
+
+table tbody td{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(112, 191, 222);
+    font-size: 18px;
+
+    table-layout:fixed;
+    width:20px;
+    overflow:hidden;
+    word-wrap:break-word;
+    
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgb(229,231,233);
+}
+

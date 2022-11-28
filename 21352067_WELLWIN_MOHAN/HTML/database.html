@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>database connection</title><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script type="text/javascript" src="js/jquery.js" ></script>
+    </head>
+    <body>
+        <center>
+        <form>
+<h3>Registration Form</h3>
+<table>
+<tr>
+<td>
+<label> Registration number</label>
+</td>
+<td>
+<input type="textbox">
+</td>
+</tr>
+<tr>
+<td>
+<label> Name</label>
+</td><td>
+<input type="textbox">
+</td></tr>
+<tr>
+<td>
+<label> Personal Email</label>
+</td>
+<td>
+<input type="textbox">
+</td>
+</tr>
+<tr>
+<td>
+<label> University Email</label>
+</td>
+<td>
+<input type="textbox">
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+</tr>
+<tr>
+<td>
+<label> Phone No</label>
+</td>
+<td>
+<input type="textbox">
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<button>Retrive</button>
+</td>
+</tr>
+</form>
+
+<script type="text/javascript">
+    var db=openDatabase("DB1","1.0","DB1",65535);
+    $(#list).click(function(){
+        $("#itemlist").children().remove();
+        db.transaction(function(transaction){
+            var sql="SELECT * FROM student ORDER BY id DESC";
+transaction.executeSql(sql,undefined,function(transaction,result){
+    if(result.rows.length){
+        for(var i=0;<result.length;i++){
+            var row=result.rows.item(i);
+            var item=row.item;
+            var id=row.id;
+            var quantity=row.quantity;
+            $("#itemlist").append('<tr><td>'+id+'</td><td>'+item+'<</td><td'+quantity+'</td></tr>');
+
+        }
+
+    }else{
+        $("#itemlist").append('<tr><td colspan="3">NO Item Found</td></tr>');
+    }
+},function(transaction,err){
+    alert(err.message);
+})
+        })
+    })
+</script>
+    </body>
+</html>

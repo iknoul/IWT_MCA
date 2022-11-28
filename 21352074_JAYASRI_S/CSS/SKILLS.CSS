@@ -1,0 +1,32 @@
+h1 {
+ text-align: center;
+ font-size: 1em;
+ color: #005;
+ margin-bottom: .3em;
+ text-decoration: underline;
+ }
+ 
+ table {
+ margin: .3em;
+ width: 290px;
+ BORDER:2PX;
+ }
+ 
+ th {
+ padding: .2em;
+ }
+ 
+ td {
+ padding-left: .5em;
+ padding-right: .5em;
+ border: 1px solid #800;
+ background-color: #ffc;
+ }
+ 
+ #trHeader {
+ color: #800;
+ }
+ 
+ .centerCell {
+ text-align: center;
+ }

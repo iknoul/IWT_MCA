@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<style>
+.table{
+	border-radius:50;
+
+}
+body{
+background-color: rgb(164, 16, 147);
+background-image: url("D:\IWT Assignment\image.png");
+ 
+}
+button {
+  background-color: #0a4b0c; /* Green */
+   border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+<form action="/attendence" method="POST">
+<div>
+
+<table id="sample_data" class="table" name="example" border=1>
+<thead>
+
+
+<th scope="col">Name</th>
+<th scope="col">Register No</th>
+<th  scope="col">Institution Mail</th>
+<th  scope="col">Personal Mail</th>
+<th  scope="col">Phone No</th>
+<th scope="col" id="date"><p id="date"></p></th>
+   {{#data}}  
+<tr>
+   
+  
+            <td>{{this.name}}</td>
+            <td>{{this.regno}}</td>
+            <td>{{this.Institutional_Email}}</td>
+            <td>{{this.Personal_Email}}</td>
+            <td>{{this.Mobile}}</td>
+            <td>
+            <div id="">
+            <input type="radio"  name="{{this.regno}}" value="1" checked>P<p></p>
+            <input type="radio"   name="{{this.regno}}" value="0" >A</td>
+            </div >
+            
+
+
+</tr>
+{{/data}}
+</thead>
+ 
+        
+ 
+
+
+</table>
+
+</form>
+
+</body>
+
+<script>
+document.getElementById("date").innerHTML = Date();
+
+
+
+
+
+</script>
+</html>
+  <tr><td colspan=7><center><button type="submit" id="btn">Submit</button>&emsp;&emsp;<a href="/back"><button>back</button></a></td></tr>
+          

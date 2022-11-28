@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				background: lightseagreen;
+				animation-name: karan;
+				animation-duration: 4s;
+			}
+			h2 {
+				position: relative;
+				margin: 0;
+				font-size: 5em;
+				font-weight: 750;
+				color: white;
+				z-index: 1;
+				overflow: hidden;
+			}
+			h2:before {
+				content: "";
+				position: absolute;
+				right: 130%;
+				width: 130%;
+				height: 100%;
+				background: linear-gradient(90deg, transparent 0%, lightseagreen 5%, lightseagreen 100%);
+
+				animation: karan 5s linear backwards;
+			}
+			@keyframes karan {
+				from {
+					right: 130%;
+				}
+
+				to {
+					right: -10%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2>Karan Jaiswal</h2>
+		</div>
+	</body>
+</html>
