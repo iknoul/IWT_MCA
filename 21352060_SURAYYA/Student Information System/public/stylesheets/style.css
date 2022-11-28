@@ -1,0 +1,23 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.login-bt{
+  width: 150px;
+}
+.header{
+  background-color: rgb(16, 135, 190);
+  height: 80px;
+}
+@media (min-width: 992px) {
+  .container{
+      max-width: 300px;
+  }
+}
+label,input,select{
+  margin: 20px;
+}
+

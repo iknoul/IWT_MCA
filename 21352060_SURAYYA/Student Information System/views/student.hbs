@@ -1,0 +1,14 @@
+<div class="container  shadow mt-5 p-5 ">
+    <h1>{{name}}</h1>
+     <div class="p-1"><a href="/regCourse"><button class="btn btn-primary">Register Course</button></a></div>
+     <br>
+
+     <h2>Registered Courses</h2>
+     {{#each course}}
+     <ol>
+        <li>{{this.courseName}}</li>
+     </ol>
+     {{/each}}
+
+
+</div>

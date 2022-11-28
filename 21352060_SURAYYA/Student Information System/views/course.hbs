@@ -1,0 +1,93 @@
+<div class="container">
+    
+<div class="container mt-3">
+    <div class="row me-auto">
+    <div class="col">
+       <form action="/search" method="post">
+        <input type="search" name="regNo" required placeholder="Course code">
+        <button><i class="bi bi-search"></i>search</button>
+       </form>
+    </div>
+     <div class="col">
+        <a href="/addPage/course"><button class="btn btn-primary">ADD COURSE</button></a>  
+     </div>
+</div>
+    <table class="table">
+  <thead>
+    <tr>
+        
+      <th scope="col">Course Code</th>
+      <th scope="col">Name</th>
+  
+      <th></th>
+      <th></th>
+      <th></th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    {{#if msg}}
+    {{#each row}}
+    <tr row_id={{this.RegNo}}>
+      
+      <td class="data">{{this.code}}</td>
+      <td class="data">{{this.Name}}</td>
+ 
+      <td><button class="btn btn-dark edit">Edit</button>
+      <button class="btn btn-dark save">Save</button></a>
+      </td>
+   <td> <a href="/delete/{{this.RegNo}}"><button class="btn btn-danger delete">Delete</button></a></td>
+ 
+    </td>
+    </tr>
+   {{/each}} 
+   {{/if}}
+   {{#else}}
+   <tr>
+    
+    <td colspan="5">No data Found</td>
+   </tr>
+   {{/else}}
+  </tbody>
+</table>
+</div>
+<script>
+   $(document).ready(function(){
+    $('.save').hide();
+        $(document).on('click', '.edit', function() {  
+  $(this).parent().siblings('td.data').each(function() {  
+    var content = $(this).html();  
+    $(this).html('<input value="' + content + '" />');  
+
+  });  
+
+       $(this).siblings('.save').show(); 
+  $(this).siblings('.delete').hide();  
+  $(this).hide();  
+  
+});  
+$(document).on('click','.save',function(){
+   $('input').each(function() {  
+    var content = $(this).val();  
+    $(this).html(content);  
+    $(this).contents().unwrap();  
+  }); 
+ var reg=$(this).closest('tr').find("td:eq(0)").text();
+ var name=$(this).closest('tr').find("td:eq(1)").text();
+ var Unimail=$(this).closest('tr').find("td:eq(2)").text();
+ var email=$(this).closest('tr').find("td:eq(3)").text();
+ var mob=$(this).closest('tr').find("td:eq(4)").text();
+
+  update(reg,name,Unimail,email,mob);
+
+
+ });
+
+
+})
+  
+
+
+
+</script>
+</div>

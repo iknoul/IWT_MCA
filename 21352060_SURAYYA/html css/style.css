@@ -1,0 +1,28 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+#blink{
+    color:white;
+    animation: blink 1s linear infinite ;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+marquee
+{
+    color: white;
+    font-size: 20px;
+    direction: ltr;
+}
+@keyframes blink
+{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+.warning{
+    background-color: red;
+
+}

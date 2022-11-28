@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <link rel="stylesheet" href="trafficstyle.css">
+    <script src="trafficfn.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <script src="https://kit.fontawesome.com/f031938573.js"></script>-->
+</head>
+<body onload="timer;">
+    <div class="traffic">
+        <div id="green" class="light">
+            <P  id="go">GO</P>
+        </div>
+        <div id="yellow" class="light">
+          <!-- <i class="fa-solid fa-person-walking-with-cane"></i>-->
+          <i class="fa fa-hand-stop-o" id="hand"></i>
+        
+        </div>
+        <div id="red" class="light">
+            <P id="stop" style="color: black;">&#10060</P>
+        </div>
+    </div>
+    <div id="stand"></div>
+    <div id="base"></div>
+</body>
+</html>

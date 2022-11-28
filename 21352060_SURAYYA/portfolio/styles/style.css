@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: black;
+    padding: 12px;
+    padding-right: 300px;
+    
+}
+nav{
+    
+    display: flex;
+    justify-content: flex-end; 
+}
+header li,a,ul{
+    display: inline;
+    padding: 10px;  
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    font-size: 15px;
+}
+li:hover,.active{
+background-color: rgb(28, 118, 179);
+border-radius: 15px;
+}
+.front-body{
+    width:100%;
+    height:600px;
+    background: url("../images/pexels-cátia-matos-1072179.jpg");
+
+    background-size: cover;
+    justify-content: center;
+    padding: 100px;
+    color: rgb(197, 197, 202);
+    font-size: 20px;
+
+}
+.front-body img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#about
+{
+    width:100%;
+    letter-spacing: 1px;
+ 
+    margin-bottom: 30px;
+    height: 300px;
+   
+}
+.about-me
+{
+    float:right;
+    /* margin-right: 100px;
+    margin-top: 50px; */
+    padding: 40px;
+    width:40%;
+    font-size: 20px;
+    
+ 
+    color: rgb(12, 27, 18);;
+    
+}
+.about-me button{
+    margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    background-color:rgb(12, 27, 18);
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+
+}
+.about-me button:hover{
+    transform:scale(1.02);
+}
+
+
+#education
+{
+    width:100%;
+    height: 500px;
+    position: relative;
+ 
+   
+}
+
+#education table
+{
+
+    width: 80%;
+  position: relative;
+  left: 100px;
+
+  top:80px;
+  bottom: 40px;
+ border-collapse: collapse;
+ border: 1px solid #bdc3c7;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+
+}
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #16a085;
+}
+tr:hover
+{
+  background-color:#f5f5f5;
+  transform:scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+
+}
+#portfolio
+{
+    width:100%;
+    height: auto;
+
+
+}
+.services{
+    height: 400px;
+}
+
+
+.card{
+    float:left;
+    width:30%;
+    height:300px;
+    align-self: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    margin-left: 20px;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    text-align: center;
+
+}
+.card:hover{
+    transform:scale(1.02);
+}
+.card p{
+    padding: 30px;
+}
+
+
+.card i{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+#portfolio h1{
+    text-align:left;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#portfolio hr{
+    width: 15%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.achievements{
+    height: 200px;
+    
+
+}
+.achievements ul{
+    padding-left: 20px;
+}
+.achievements li{
+  background-color: rgb(28, 204, 151);
+  display: inline;
+  position: relative;
+  left: 0px;
+  padding: 20px;
+
+}
+.quote{
+    padding: 20px;
+    font-weight: bold;
+}
+.projects .card{
+    margin-left: 50px;
+    width:20%;
+    padding: 0;
+    height: 400px;
+}
+.major{
+    height: 400px;
+     align-items: center;
+}
+.minor{
+    display: block;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 100%;
+    font-weight: bold;
+    padding-left: 200px;
+    padding-bottom: 30px;
+
+}
+.minor table td:hover{
+    background-color: brown;
+    color: white;
+}
+.card img{
+    width:100%;
+    height:40%;
+}
+.card a{
+    padding:0;
+}
+.card h2{
+    font-size: 20px;
+}
+
+
+
+/* .services hr{
+    width: 20%;
+    
+    margin: auto;
+    margin-bottom: 30px;
+} */
+
+
+#contacts
+{
+    width:100%;
+ background-color: rgb(0, 0, 0); 
+ color:white;
+ padding: 50px;
+ height: 400px;
+
+
+
+}
+.cont{
+    width: 50%;
+    float: left;
+}
+
+.icons i{
+    color: white;
+    margin: 30px;
+    font-size: 30px;
+}
+#contacts button{
+    width: 100px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    border-radius: 6px;
+}
+
+
+@media only screen and (max-width:768px){
+  table{
+    width:90%;
+
+
+  }
+}
+

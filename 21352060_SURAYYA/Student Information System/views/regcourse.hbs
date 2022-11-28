@@ -1,0 +1,27 @@
+<div class="container shadow mt-5">
+     {{#if msg}}
+      <div class="row">
+ <div class="alert alert-success alert-dismissible fade show" role="alert">
+  Added Successfully
+  
+</div>
+    </div>
+   {{/if}}
+    <form action="/regaction" method="post">
+            <label for="">Register Number</label>
+            <br>
+            <input type="text" name="regNo" class="form-control" required>
+            <br>
+            <label for="sub">Course</label>
+        <select name="sub" id="" >
+            {{#each subdata}}
+            <option value="{{this.code}}">{{this.Name}}</option>
+            {{/each}}
+        </select>
+        <br>
+             
+             
+             
+            <button class="btn btn-primary">Submit</button>
+        </form>
+</div>

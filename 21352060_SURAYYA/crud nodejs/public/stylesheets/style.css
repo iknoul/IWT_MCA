@@ -1,0 +1,67 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.form-box{
+  width:250px;
+
+  margin:auto;
+  margin-top: 100px;
+  background-color: grey;
+  padding: 50px 30px;
+}
+h1{
+  text-align: center;
+}
+input{
+  background: none;
+  border: 1px solid green;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+button
+{
+background-color: rgb(41, 41, 71);
+color: white;
+  width: 100px;
+  height: 30px;
+ border-radius: 5px;
+}
+table{
+  margin: 50px auto;
+  width: 600px;
+  color: black;
+}
+table,td,th{
+  border: 2px solid black;
+ border-collapse: collapse;
+ padding: 5px;
+
+}
+
+tr:nth-child(even){
+  background-color: #b6b2ae;
+}
+.cell{
+  border: none;
+  color: black;
+  
+}
+.addbt{
+  margin-left: 20px;
+  height: 50px;
+  width: 120px;
+}
