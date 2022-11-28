@@ -1,0 +1,20 @@
+h1{
+	border-style: solid;
+	border-width: 5px;
+	border-color: yellow red blue violet;
+}
+h2{
+	border-left-style: solid;
+	border-top-style:dotted;
+	border-bottom-style:groove;
+	border-right-style:inset;
+	border-width: 5px;
+}
+h3{
+	border: 5px solid red;
+	border-radius: 10px;
+}
+p{
+
+	border-style: dotted;
+}
