@@ -1,0 +1,45 @@
+body{
+    background-color: bisque;
+}
+.square
+{
+    width:100px;
+    height: 80px;
+    background-color: green;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    animation: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   
+}
+h1{
+    text-align: center;
+}
+@keyframes moving
+{
+    0%{
+       left:500px;
+       top: 100px;
+    }
+    25%
+    {
+        left:700px;
+        top: 200px;
+      
+    }
+    50%{
+        left:500px;
+        top:400px;
+    }
+    75%{
+        left: 200px;
+        top:200px;
+    }
+    100%{
+        left:500px;
+        top: 100px;
+    }
+}

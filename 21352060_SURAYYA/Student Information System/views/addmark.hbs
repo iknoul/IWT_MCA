@@ -1,0 +1,49 @@
+<div class="container shadow mt-5 p-5">
+      {{#if msg}}
+      <div class="row">
+ <div class="alert alert-success alert-dismissible fade show" role="alert">
+  Added Successfully
+  
+</div>
+    </div>
+   {{/if}}
+    <div class="col-6 ">
+     <form action="/markAction" method="post">
+        <label for="regNo">Register Number</label>
+        <select name="regNo" id="">
+            <option value="">--Select--</option>
+            {{#each row}}
+            <option value="{{this.RegNo}}">{{this.RegNo}}</option>
+            {{/each}}
+        </select>
+        <br>
+        <label for="sub">Course</label>
+        <select name="sub" id="" >
+            {{#each subdata}}
+            <option value="{{this.code}}">{{this.Name}}</option>
+            {{/each}}
+        </select>
+        <br>
+        <label for="internal1">Internal 1</label>
+        <input type="text" name="internal1">
+        <br>
+         <label for="internal2">Internal 2</label>
+        <input type="text" name="internal2">
+        <br>
+         <label for="assignment">Assignment</label>
+        <input type="text" name="assignment">
+        <br>
+         <label for="external">External</label>
+        <input type="text" name="external">
+        <br>
+       
+        <br>
+      
+        <input type="submit" value="Submit" class="btn btn-primary">
+
+
+        
+    </form>
+    </div>
+   
+</div>

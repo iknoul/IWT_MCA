@@ -1,0 +1,17 @@
+<div class="container m-5 d-flex align-items-center  shadow mt-5 p-5">
+   <form action="/loginaction/{{userid}}" method="post">
+      {{#if msg}}
+       <p style="color:red">{{msg}}</p>
+    {{/if}}  
+    <label for="">{{userid}}</label>
+    <br>
+    <input type="text" name="id" width="200">
+    <br>
+    <label for="">Password</label>
+    <br>
+    <input type="password" name="password" width="200">
+    <br>
+  
+    <button class="btn btn-primary mt-3">Login</button>
+   </form>
+</div>
