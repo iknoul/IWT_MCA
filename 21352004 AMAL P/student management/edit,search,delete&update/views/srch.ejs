@@ -1,0 +1,82 @@
+<html>
+<head>
+<style>
+
+.input{
+ border-radius: 8px;
+ height :50px;
+ font-size: 14pt;
+}
+
+.inputtable{
+ border-radius: 8px;
+ height :50px;
+ 
+ font-size: 10pt;
+}
+
+.button{
+    color: white;
+ background-color: rgb(53, 4, 8);
+ height : 50px;
+ border : none;
+ width : 80px;
+ border-radius : 8px;
+ font-size : 14pt;
+}
+.frm{
+    margin-top: 50px;
+}
+</style>
+</head>
+<body onload="bodyload()">
+<form action='/search' method="POST" class="frm">
+<input type="text"  class="input" name="rnumb" >
+<button class="button">Search</button>
+</form>
+<% if(data.length){ %>
+<table>
+<tbody>
+<form action="/edit/<%- data[0].Reg_Number%>" method="post">
+<tr>
+<td scope="col">Name</td><td><input class="inputtable" type="text" name="rname" value="<%- data[0].Name%>"></td></tr><tr>
+<td scope="col">Register No</td><td><input class="inputtable" type="text" name="reg"  value="<%- data[0].Reg_Number%>"></td>
+</tr><tr>
+<td  scope="col">Institution Mail</td><td><input class="inputtable" type="text" name="imail" value="<%- data[0].I_Email%>">
+</td></tr><tr>
+<td  scope="col">Personal Mail</td> <td><input class="inputtable" name="pmail" type="text" value="<%- data[0].P_Email%>">
+</td></tr><tr>
+<td  scope="col">Phone No</td><td><input class="inputtable" type="text" name="phone" value="<%- data[0].Mobile%>">
+</td></tr>
+<tr>
+
+            <td><button align="center" class="button" type="submit">Edit</button></td><p>
+            </form>
+<form action="/delete/<%- data[0].Reg_Number%>"  method="post">
+            <td><button align="center" class="button" type="submit">Delete</button>
+                        </form>
+                        <form action="/register/ <%- data[0].Reg_Number%>" method="post">
+                            <td><button align="center" class="button" type="submit">insert</button>
+                                        </form>
+                        
+</tr>
+
+    <%} else{ %>     
+            
+<tr>
+<td> <label>Data not found</label></td>
+</tr>
+<%}%>
+
+         </tbody>
+</table>
+
+</body>
+<script>
+function bodyload(){
+console.log(data);
+
+}
+</script>
+
+</html>

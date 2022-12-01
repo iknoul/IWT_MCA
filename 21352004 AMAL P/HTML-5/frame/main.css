@@ -1,0 +1,99 @@
+#tb1{
+width:32;
+
+}
+.frm1
+{
+	text-color:white;
+	background-color:gray;
+}
+#frm2
+
+{
+	font-weight:bold;
+	font-size:30;
+	background-color:red;
+}
+.fm2
+{
+	margin:auto;
+	border:2px solid black;
+}
+.frm3
+{
+	font-weight:bold;
+	font-size:30;
+	background-color:orange;
+}
+.frm5
+{
+	font-weight:bold;
+	font-size:30;
+	background-color:pink;
+	
+}
+.frm44
+{
+	font-weight:bold;
+	font-size:30;
+	background-color:gray;
+}
+.center{
+	text-align:center;
+}
+.cl
+{
+	background-color:#800000;
+	font-size:30;
+}
+.frm66
+{
+	
+	color:white;
+	animation: blink 2s linear infinite;
+	font-weight:bold;
+	font-size:30;
+	
+	
+}
+
+@keyframes blink
+        {
+            0%{opacity: 0;}
+			25%{opacity: .25;}
+            50%{opacity: .5;}
+            75%{opacity: ,75;}
+            
+            100%{opacity: 1;}
+        }
+.frm55
+{
+	width:100px;
+	height:100px;
+}
+#twob
+{
+	color:maroon;
+	
+	font-size:30;
+	
+	
+}
+.bl
+{
+	font-weight:bold;
+	text-align:center;
+	font-size:30;
+}
+.it
+{
+	font-style:italic;
+	text-align:center;
+	font-size:30;
+}
+.un
+{
+	text-decoration:underline;
+	text-align:center;
+	font-size:30;
+}
