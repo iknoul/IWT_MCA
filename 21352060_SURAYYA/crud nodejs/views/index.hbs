@@ -1,0 +1,74 @@
+<h1>{{title}}</h1>
+
+    <div class="container">
+
+      <div class="form-box">
+          <form action="/submitaction" method="post">
+                <label for="reg">Register Number</label>
+                <br>
+                <input type="text" id="reg" name="reg" required>
+                <br><br>
+                <button>Enter</button>
+          </form>
+      </div>
+      <br>
+      <br>
+      <a href="/add" >   <button class="addbt">ADD STUDENT</button></a>
+   
+      <table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Register Number</th>
+            <th>Name</th>
+            <th>University mail id</th>
+            <th>Personal mail id</th>
+            <th>Mobile Number</th>
+            <th>Action</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each sampledata}}
+        <tr>
+            
+   <td><button  id="edit">Edit</button></td>
+   <form action="/edittable" method="post">
+            <td><input type="text" class="cell" id="regno" name="regno" value="{{this.reg}}"> </td>
+            <td><input type="text" disabled class="cell" id="name" name="name" value="{{this.name}}"> </td>
+            <td><input type="email" disabled class="cell" id="unimail" name="unimail" value="{{this.unimail}}"> </td>
+            <td><input type="email" disabled class="cell" id="email" name="email" value="{{this.email}}"> </td>
+             <td><input type="text" disabled class="cell" id="mob" name="mob" value="{{this.mobile}}"> </td>
+             <td><button id="conf" disabled>Confirm</button></td>
+          </form>
+
+        </tr>
+        
+        {{/each}}
+        
+    </tbody>
+ 
+
+</table>
+</div>
+       <script>
+    $(document).ready(function()
+    {
+   // $("#regno").prop('disabled',true);
+          $("#edit").click(function()
+          {
+        
+            $("#name").prop('disabled',false);
+            $("#unimail").prop('disabled',false);
+            $("#email").prop('disabled',false);
+            $("#mob").prop('disabled',false);
+           $("#conf").prop('disabled',false)
+           // $("#edit").html("confirm");
+    
+            
+
+          })
+    })
+
+ </script>

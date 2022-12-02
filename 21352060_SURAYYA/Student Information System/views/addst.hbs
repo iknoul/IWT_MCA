@@ -1,0 +1,40 @@
+<div class="container  shadow mt-5 p-5">
+    {{#if msg}}
+      <div class="row">
+ <div class="alert alert-success alert-dismissible fade show" role="alert">
+  Added Successfully
+  
+</div>
+    </div>
+   {{/if}}
+    <div class="row">
+         <div class="col-4 pl-5">
+        <form action="/add/{{userid}}" method="post">
+            <label for="">{{userid}}</label>
+            <br>
+            <input type="text" name="regNo" class="form-control" required>
+            <br>
+             <label for="">Name</label>
+            <br>
+            <input type="text" name="name" class="form-control" required>
+            <br>
+             <label for="">University Mail id</label>
+            <br>
+            <input type="email" name="unimail" class="form-control" required>
+            <br>
+             <label for="">Personal Mail id</label>
+            <br>
+            <input type="email" name="email" class="form-control" required>
+            <br>
+             <label for="">Mobile Number</label>
+            <br>
+            <input type="text" name="mob" class="form-control" required>
+            <br>
+             
+             
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </div>
+  
+</div>

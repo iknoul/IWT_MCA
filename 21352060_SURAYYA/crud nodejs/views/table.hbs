@@ -1,0 +1,44 @@
+<form action="/attendance" method="post">
+<label for="today">Date:</label>
+<input type="date" name="today" id="todayDate">
+<table>
+    <thead>
+        <tr>
+            <th>Register Number</th>
+            <th>Name</th>
+            <th>University mail id</th>
+            <th>Personal mail id</th>
+            <th>Mobile Number</th>
+       <!--     <th>Action</th>-->
+            <th>Attendance</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tabledata}}
+        <tr>
+           
+            <td><div class="edit" contentEditable="true">{{this.reg}}</div></td>
+            <td><div class="edit" contentEditable="true">{{this.name}}</div></td>
+            <td><div class="edit" contentEditable="true">{{this.unimail}}</div></td>
+            <td><div class="edit" contentEditable="true">{{this.email}}</div></td>
+             <td><div class="edit" contentEditable="true">{{this.mobile}}</div></td>
+            <!-- <td><button data-id="{{this.reg}}">Edit</button></td>-->
+            
+             <td><input type="radio" data-id="{{this.reg}}" name="{{this.reg}}" value="P" checked><label for="attndnc">P</label>
+             <input type="radio"  name="{{this.reg}}" value="A"><label for="attndnc">A</label></td>
+  
+        </tr>
+        {{/each}}
+        <tr ><td colspan="7"><button class="addbt">Submit Attendance</button></td></tr>
+    </tbody>
+
+</table>
+
+</form>
+<script>
+   
+$(document).ready(function()
+{
+    //
+})
+</script>

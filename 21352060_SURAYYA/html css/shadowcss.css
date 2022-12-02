@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+#img-box{
+    margin: 150px 400px;
+}
+#img-box,img{
+    width:250px;
+    height: 200px;
+    
+}
+hr{
+    width: 400px;
+    background-color: black;
+}
+#img-box:hover{
+    box-shadow: 0 16px 20px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}

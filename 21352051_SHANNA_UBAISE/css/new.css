@@ -1,0 +1,27 @@
+body{
+	background-color: yellow;
+	background-image: url("1.jpg");
+	background-repeat: no-repeat;
+}
+h1{
+	border: 5px solid red;
+	width: 200px;
+	height: 200px;
+	outline-style: solid;
+	outline-width: 10px;
+	outline-color: blue;
+	background-color: aliceblue;
+
+}
+p{
+	background-color: red;
+	opacity: .5;
+}
+.div1{
+	height: 300px;
+	width: 300px;
+	background-color: greenyellow;
+	outline-style: dotted;
+	outline-width: 10px;
+	margin: 50px;
+	}
