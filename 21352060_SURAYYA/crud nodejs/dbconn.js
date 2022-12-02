@@ -3,7 +3,7 @@ var conn=mysql.createConnection({
     host:'localhost',
     database:'iwtdb',
     user:'root',
-    password:'surai@786313'
+    password:''
 });
 
 conn.connect(function(error)
