@@ -1,0 +1,50 @@
+body {
+  background-color: #faf2e4;
+  margin: 5%;
+  font-family: sans-serif;
+  }
+#bold{
+font-weight:bold;
+}
+
+.textshadow{
+
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.ital{
+font-style:italic;
+}
+.underl{
+text-decoration:underline;
+}
+.imgcenter{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.center{
+text-align:center; 
+}
+h1
+{
+text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid blue;
+  margin-top: 30px;
+color: orange;
+}
+h3{
+text-align: center;
+  font-family: comic sans;
+  font-weight: bold;
+  text-transform: lowercase;
+color:rgb(255,0,0);
+}
+div{
+ background-color: black;
+  color: white;
+}

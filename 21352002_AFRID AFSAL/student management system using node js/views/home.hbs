@@ -1,0 +1,41 @@
+<table>
+    <form action="/searchaction" method="post">
+
+<label for="reg">Register number:</label>
+<input type="text" id="reg" name="reg">
+<button>Search</button>
+
+
+</form>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+            <td>REGISTER NUMBER</td>
+            <td>INSTITUTIONAL MAIL ID</td>
+            <td>PERSONAL MAIL ID</td>
+            <td>MOBILE</td>
+            <td><a href="/adduser" class="addbtn">Add User</a></td>
+            
+
+            
+            <td><a href="/attendence"><button>Attendence</button></a></td>
+            
+        </tr>
+        
+    </thead>
+    <tbody>
+{{#each rows}}
+    <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.Name}}</td>
+        <td>{{this.RegisterNumber}}</td>
+        <td>{{this.InstitutionalEmail}}</td>
+        <td>{{this.PersonalEmail}}</td>
+        <td>{{this.Mobile}}</td>
+        <td><a class="edit" href="/edituser/{{this.ID}}">EDIT</a></td>
+        <td><a onclick="return confirm('Are you sure?')" class="delete" href="/deleteuser/{{this.ID}}">DELETE</a></td>
+    </tr>
+{{/each}}
+    </tbody>
+</table>
