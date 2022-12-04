@@ -1,0 +1,84 @@
+<html>
+
+<head>
+<style>
+
+#reddot{
+
+	background-color:red;
+	width:300px;
+	height:300px;
+	position: absolute;
+	top:400;
+	left:700;
+	}
+.button{
+	background-color:green;
+	width:70px;
+	height:50px
+	
+}
+</style>
+
+
+</head>
+<body>
+
+<div id="">
+<buton id="btn" name="start" class="button" onclick="start()">Start</button>
+</div>
+<buton id="btn" name="stop" class="button" onclick="stop()">Stop</button>
+<img src="car.png" id="reddot">
+
+</body>
+
+<script>
+var x=0;
+var y= document.getElementById("reddot");
+
+var flag=0;
+
+function start(){
+	
+	
+	val=setInterval(function(){
+	
+	
+	if(x==window.screen.width)
+	{
+		flag=1;
+			}
+	else if(x==0)
+	{
+		flag=0;
+	}
+	
+		if(flag==1)
+		{
+		x--;
+		y.style.left=x;
+		y.style.transform="rotate(180)";
+		
+		
+		}
+		else{
+	
+		x++;
+		y.style.left=x;
+		
+		}	
+		
+		},5);
+		
+		
+	
+	}
+function stop(){
+
+	
+	clearTimeout(val);
+	}
+	
+
+</script>
+</html>

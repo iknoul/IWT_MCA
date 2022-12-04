@@ -1,0 +1,100 @@
+.outerbox{
+
+    border:1px solid black;
+    width:500px;
+    margin:auto;
+    margin-top:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+
+}
+
+.keypads{
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 10px;
+
+    padding: 10px;
+
+    margin:auto;
+
+}
+
+.buttons{
+    background-color: #fff;
+
+    border-color: #fff;
+
+    color: #000;
+}
+
+.operator {
+
+    background-color: #fff;
+
+    border-color: #fff;
+
+    color: #FF7355;
+
+}
+
+.clear {
+
+
+    background-color: #FF7355;
+
+    border-color: #FF7355;
+
+    color: #fff;
+
+}
+
+.del{
+    background-color: #FF7355;
+
+    border-color: #FF7355;
+
+    color: #fff;
+}
+
+.equal-sign {
+
+    background-color: #FF7355;
+
+    border-color: #FF7355;
+
+    color: #fff;
+
+}
+
+.screen{
+
+    background-color:#EEFAF8;
+
+    justify-content: left;
+
+    color: black;
+
+    font-size: medium;
+
+    width: 130%;
+
+    height: 30%;
+
+    cursor: default;
+
+    padding: 10px; 
+
+    padding-left: auto;
+    padding-right:auto;
+
+    margin: auto;
+
+    margin-bottom: 10px;
+
+}
+
+
