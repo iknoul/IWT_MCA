@@ -1,0 +1,65 @@
+<!--register.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login and register form with Node.js, Express.js and MySQL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+input{
+    height:50px;
+    font-size:14pt;
+    border-radius: 8px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2></h2>
+     
+      <h3>Register form</h3>      
+      <form action="/register" method="POST">
+       <table>
+      <tr><td>
+        
+            <label>Name</label></td><td>
+            <input type="text" class="form-control" placeholder="Full Nme" name="rname">
+     </tr>
+        <tr><td>
+            <label>Institution mail</label></td><td>
+            <input type="text" class="form-control" placeholder="Institution Mail" name="imail">
+     </td></tr>
+     <tr><td>
+     
+            <label>Personal mail</label></td><td>
+            <input type="text" class="form-control" placeholder="Personal Mail" name="pmail">
+     </td></tr>
+        
+        
+     <tr><td>
+        	<label>Regster No</label></td><td>
+        	<input type="textbox" class="form-control" placeholder="Register No" name="reg"></td>
+       </td></tr><tr>
+            <td><label>Phone</label></td><td>
+            <input type="number" class="form-control" placeholder="Phone" name="phone"></td></tr>
+         <tr><td colspan="2">
+        <button type="submit" class="button">Submit</button></td></tr>
+      
+      </form>
+    </div>
+  </body>
+</html>
