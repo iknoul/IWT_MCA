@@ -1,0 +1,89 @@
+<html>
+<head><title>Form</title>
+
+<style>
+input{
+
+    height:50px;
+    font-size:14pt;
+    border-radius: 8px;
+
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  }
+</style>
+
+</head>
+
+
+<body  ><center>
+<form id="myform">
+<h3 >Registration Form</h3>
+<table width=500><tr>
+<td>Name</td>
+<td><input type="textbox" id="name"></td></tr>
+<tr><td>Regster No</td>
+<td><input type="textbox"></td>
+</tr>
+<tr>
+<td>institution Mail id</td>
+<td><input type="textbox" id="in_mail"></td>
+</tr>
+<tr>
+<td>Personal Mail id</td>
+<td><input type="textbox" id="per_mail"s></td>
+</tr>
+<tr>
+<td>Mobile No</td>
+<td><input type="textbox"></td>
+</tr>
+
+<tr>
+<td><input type="button" class="button" id="butsave" onclick="button()" value="submit"></td>
+<td><input type="button" class="button"  id="reset"  >Reset</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+
+
+<script>
+
+var name=$('#name').val();
+var in_mail=$('#in_mail').val();
+var per_mail=$('#per_mail').val();
+var phone=$('#phone').val();
+
+function button() {
+	
+	alert("success");
+	
+	}
+	
+	
+
+
+
+
+
+
+}
+
+
+
+
+</script>
+
+</html>
