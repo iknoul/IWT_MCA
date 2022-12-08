@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+
+.input{
+	border-radius: 8px;
+	height :50px;
+	font-size: 14pt;
+}
+
+.inputtable{
+	border-radius: 8px;
+	height :50px;
+	
+	font-size: 10pt;
+}
+
+.button{
+	background-color: green;
+	height : 50px;
+	border : none;
+	width : 60px;
+	border-radius : 8px;
+	font-size : 14pt;
+	
+
+}
+
+
+</style>
+
+
+</head>
+<body onload="bodyload()">
+<form action='/search' method="POST"><br><button align="center" class="button">Edit</button><p>
+<input type="text"  class="input" name="rnumb" ><button class="button">Search</button>
+</form>
+<% if(data.length){ %>
+<table>
+<tbody>
+
+<form action="/edit/<%- data[0].RNUM%>" method="post">
+<tr>
+<td scope="col">Name</td><td><input class="inputtable" type="text" name="rname" value="<%- data[0].NAME%>"></td></tr><tr>
+<td scope="col">Register No</td><td><input class="inputtable" type="text" name="reg"  value="<%- data[0].RNUM%>"></td>
+</tr><tr>
+<td  scope="col">Institution Mail</td><td><input class="inputtable" type="text" name="imail" value="<%- data[0].IMAIL%>">
+</td></tr><tr>
+<td  scope="col">Personal Mail</td> <td><input class="inputtable" name="pmail" type="text" value="<%- data[0].PMAIL%>">
+</td></tr><tr>
+<td  scope="col">Phone No</td><td><input class="inputtable" type="text" name="phone" value="<%- data[0].MOBILE%>">
+</td></tr>
+
+
+<tr>
+
+            <td><button align="center" class="button" type="submit">Edit</button></td><p>
+            </form>
+<form action="/delete" method="post">
+            <td><button align="center" class="button" type="submit">Delete</button>
+                        </form>
+</tr>
+
+    <%} else{ %>     
+            
+<tr>
+
+<td> <label>Data not found</label></td>
+</tr>
+
+<%}%>
+
+          </tbody>
+</table>
+
+</body>
+<script>
+function bodyload(){
+console.log(data);
+
+}
+
+
+
+</html>

@@ -1,0 +1,88 @@
+
+<html>
+<head>
+
+<style>
+.table{
+	border-radius:50;
+	
+
+}
+body{
+background-color: cyan;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  }
+    .select{
+  width:500px;
+  
+  
+  }
+
+</style>
+</head>
+<body>
+<form action="/attendence" method="POST">
+<div>
+<label >Select Subject</label>
+</div><div>
+<select class="select" onchange="/table">
+
+<option>IWT</option>
+<option>SWE</option>
+<option>Automata</option>
+</select>
+<table id="sample_data" class="table" name="example" border=1>
+<thead>
+
+<th scope="con">Sl.No</th>
+<th scope="col">Name</th>
+<th scope="col">Register No</th>
+
+<th scope="col" id="date"><p id="date"></p></th>
+  <% if(data.length){ for(var i = 0; i< data.length; i++) {%>
+<tr>
+  <th scope="row"><%= (i+1) %></th>
+            <td><%- data[i].NAME%></td>
+            <td><%- data[i].RNUM%></td>
+            <td>
+            <div id="">
+            <input type="radio"  name="<%- data[i].RNUM%>" value="1" checked>Pressnt<p></p>
+            <input type="radio"   name="<%- data[i].RNUM%>" value="0" >Absent</td>
+            </div >
+</tr>
+</thead>
+ <% } }else{ %>
+          <tr>
+            <td>No data ever existed.</td>
+          </tr>
+          <% } %>
+          <tr><td colspan=7 align="center"><button type="submit" id="btn">Submit</button></td></tr>
+ 
+
+
+</table>
+</form>
+
+</body>
+
+<script>
+document.getElementById("date").innerHTML = Date();
+
+
+
+
+
+</script>
+</html>

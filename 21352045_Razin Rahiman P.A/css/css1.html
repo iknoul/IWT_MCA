@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid grey;
+  padding: 50px;
+  margin: 20px;
+}
+  #blink{
+            color:black;
+            animation: blink 1s linear infinite ;
+            font-size: 50px;
+            text-align: center;
+        }
+        marquee
+        {
+            color: black;
+            font-size: 20px;
+        }
+        @keyframes blink
+        {
+            0%{opacity: 0;}
+            50%{opacity: .5;}
+            100%{opacity: 1;}
+        }
+</style>
+</head>
+
+<body bgcolor="lightblue"><h1 id="blink">Warning</h1>
+ 
+<marquee behavior="scroll" direction="right">read the message</marquee> <center>
+<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+ only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</div>
+</body>
+</html>
