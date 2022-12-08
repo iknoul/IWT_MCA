@@ -1,0 +1,78 @@
+<html>
+<head>
+
+<style>
+.table{
+	border-radius:50;
+
+}
+body{
+background-color: rgb(121, 82, 228);
+}
+button {
+  background-color: #af4c6d; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+<form action="/attendence" method="POST">
+<div>
+
+<table id="sample_data" class="table" name="example" border=1>
+<thead>
+
+
+<th scope="col">Name</th>
+<th scope="col">Register Number</th>
+<th  scope="col">Institution Mail</th>
+<th  scope="col">Personal Mail</th>
+<th  scope="col">Mobile</th>
+<th scope="col" id="date"><p id="date"></p></th>
+   {{#data}}
+<tr>
+   
+  
+            <td>{{this.Name}}</td>
+            <td>{{this.Regno}}</td>
+            <td>{{this.InstEmail}}</td>
+            <td>{{this.PerEmail}}</td>
+            <td>{{this.Mobile}}</td>
+            <td>
+            <div id="">
+            <input type="radio"  name="{{this.reg_no}}" value="1" checked >P
+            <input type="radio"  name="{{this.reg_no}}" value="0" >A</td>
+            </div >
+          
+
+</tr>
+{{/data}}
+</thead>
+ 
+          <tr><td colspan=7><center><button type="submit" id="btn">Submit</button></td></tr>
+ 
+
+
+</table>
+</form>
+<a href="/form" style="color:black">back</a>
+</body>
+
+<script>
+document.getElementById("date").innerHTML = Date();
+
+
+
+
+
+</script>
+</html>

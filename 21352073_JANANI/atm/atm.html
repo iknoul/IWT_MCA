@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="amount" placeholder="Enter Withdrawal Amount">
+    <button id="enter">Submit</button>
+        <script>
+            function withdrawMoney(amount){
+                var balance=3000;
+                if(amount%5!=0){
+                    alert('Incorrect Withdrawal Amount(Enter only multiple of 5)');
+                    return false;
+                }
+                else if(amount>=balance){
+                    alert("Insufficient Balance");
+                    return false;
+                }
+                balance=balance-amount;
+                alert("Successful Transaction\nAvailable Balance is: RS."+balance);
+
+            }
+            function enterAmount(){
+                var amount=document.getElementById("amount").value;
+                withdrawMoney(amount);
+            }
+            document.getElementById("enter").addEventListener("click",enterAmount);
+        </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>BROWSE FORM</title>
+  </head>
+  <style>
+    .browseTable {
+      margin-top: 56px;
+      margin-bottom: 56px;
+      margin-left: 500px;
+      margin-right: 500px;
+      text-align: left;
+      background-color: rgb(240, 101, 210);
+      height: 40%;
+      width: 40%;
+      border: 3px solid black;
+      padding-left: 20px;
+      border-collapse: collapse;
+    }
+    button {
+      background-color: rgb(28, 172, 9);
+    }
+    #myfile {
+      background-color: darkgray;
+    }
+  </style>
+  <body>
+    <br />
+
+    <br />
+    <table border="2" align="center" class="browseTable">
+      <tr>
+        <td>
+          <form>
+            <div>
+              <label> Enter name of Your Friend:</label>
+              <input type="textbox" />
+            </div>
+            <br />
+            <div>
+              <label> Choose the file you want to post to your friend</label>
+            </div>
+            <br />
+            <div><input type="textbox" /><input type="file" id="myfile" /></div>
+            <br />
+
+            <div>
+              <label> What does the file contain?</label>
+            </div>
+            <br />
+
+            <div>
+              <input type="checkbox" /> Image<input type="checkbox" /> Source
+              code<input type="checkbox" /> Binarycode
+            </div>
+            <br />
+            <div>You have completed the form<button>Submit Query</button></div>
+            <br />
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
