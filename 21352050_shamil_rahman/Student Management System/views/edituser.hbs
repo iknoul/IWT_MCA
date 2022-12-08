@@ -1,0 +1,39 @@
+<h3>EDIT STUDENT DETAILS</h3>
+
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+
+{{#each rows}}
+<form action="/edituser/{{this.ID}}" method="post" autocomplete="false">
+<div class = "form-group">
+    <label for="name">NAME</label>
+    <input type="text" name = "Name" value="{{this.Name}}">
+</div>
+
+<div class = "form-group">
+    <label for="RegisterNumber">REGISTER NUMBER</label>
+    <input type="number" name = "RegisterNumber" value="{{this.RegisterNumber}}">
+</div>
+
+<div class = "form-group">
+    <label for="InstitutionalEmail">INSTITUTIONAL MAIL ID</label>
+    <input type="mail" name = "InstitutionalEmail" value="{{this.InstitutionalEmail}}">
+</div>
+
+<div class = "form-group">
+    <label for="PersonalEmail">PERSONAL MAIL ID</label>
+    <input type="mail" name = "PersonalEmail" value="{{this.PersonalEmail}}">
+</div>
+
+<div class = "form-group">
+    <label for="Mobile">MOBILE</label>
+    <input type="number" name = "Mobile" value="{{this.Mobile}}">
+</div>
+
+<div class = "form-group">
+    <button type="submit">Save Changes</button>
+    <a class="viewAll" href="/">View All</a>
+</div>
+</form>
+{{/each}}
