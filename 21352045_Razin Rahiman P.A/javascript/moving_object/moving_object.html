@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+  #obj{ 
+  position:absolute;
+	left:70;
+	top:50;
+} 
+.start
+{
+width:50px;
+height:40px;
+}
+.stop
+{
+width:50px;
+height:40px;
+}
+
+</style>
+</head>
+</head>
+
+<body>
+<button class="start" onclick="start()">start</button><br>
+<button class="stop"  onclick="stop()">stop</button><br>
+
+<div id="obj">
+    <img src="C:\3rd sem\iwt record_work\football.jpg">
+
+</div>
+</body>
+<script>
+var x= 0;
+var re=document.getElementById("obj");
+var flag=0;
+
+function start()
+{
+	ab=setInterval(function()
+	{
+	if(x==window.screen.width)
+	{
+	 flag=1;
+ }
+ else if(x==0)
+ {
+  flag=0;
+ }
+ 
+  if(flag==1)
+  {
+  x--;
+  re.style.left=x;
+  
+  
+  }
+  else{
+ 
+  x++;
+  re.style.left=x;
+} 
+  
+},5);
+
+}
+function stop()
+{
+
+clearTimeout(ab);
+}
+</script>
+</html>
