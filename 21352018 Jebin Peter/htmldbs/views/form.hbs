@@ -1,0 +1,62 @@
+<h1>{{title}}</h1>
+<form action="/searchaction" method="post">
+<label for="reg">Register number: </label>
+<input type="text" id="reg" name="reg">
+<button> Search </button>
+</form>
+
+<script>
+
+</script>
+
+<style>
+    table,th,td{
+        border:2px solid black;
+        border-collapse:collapse;
+        border-radius: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+    th, td{
+        padding: 15px;
+        border-radius: 50px;
+        text-align: left;
+    }
+</style>
+<br>
+<br>
+<table align="center">
+        <tbody>
+               {{#each sampledata}}
+               <tr>
+                <th>Register Number</th>
+                <th>Name</th>
+                <th>Institutional mail id</th>
+                <th>Personal mail id</th>
+                <th>Mobile</th>
+                <th>Actions</th>
+               </tr>
+                <tr>
+                <td class="reg"><input type='text' disabled class='form-control txtreg' placeholder='enter reg' value="{{this.regno}}" /></td>
+                <td class="name">{{this.name}}</td>
+                <td class="iemail">{{this.IEmail}}</td>
+                <td class="pemail">{{this.PEmail}}</td>
+                <td class="mobile">{{this.Mobile}}</td>
+                <td><button class="edit" href="#">Edit</button></td>
+               </tr>
+                
+            {{/each}}
+        </tbody>
+      </table>
+      <script>
+        $(document).ready(function()
+        {
+            console.log("working");
+            $(".edit").click(function() 
+             {
+                $(this).prop('contentEditable',true);
+                //const reg= $(this).parent().parent().find(".reg").html();
+                //$(this).parent().parent().find(".reg").html("<input type='text' value='"+reg+"' class='form-control txtreg' placeholder='enter reg/>");
+             }
+        })
+            
+      </script>
