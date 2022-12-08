@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style_bg_changer.css">
+        <title>
+        text background
+        </title>
+        <style>
+            body{
+            background-color: rgb(201, 24, 24);
+            }
+            .contain-para{
+            background: url(giphy.gif);
+            background-size: cover;
+            background-position: center;
+            -webkit-background-clip: text;
+            color: transparent; 
+            box-sizing: border-box;
+            font-size: 58px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            flex-shrink: 0;
+            }
+            #move{
+            position: relative;
+            animation-name:anime;
+            animation-duration: 40s;
+            }
+            @keyframes anime {
+            0% { left:0px; top:0px;}
+            5% {left:35px; top:10px;}
+            10% { left:70px; top:25px;}
+            15% { left:105px; top:20px;}
+            20% { left:140px; top:40px;}
+            25% {left:175px; top:60px;}
+            30% { left:200px; top:80px;}
+            35% { left:230px; top:100px;}
+            40% { left:265px; top:90px;}
+            45% {left:295px; top:110px;}
+            50% { left:340px; top:120px;}
+            55% { left:375px; top:110px;}
+            60% {left:405px; top:90px;}
+            65% { left:440px; top:70px;}
+            70% { left:470px; top:90px;}
+            75% { left:500px; top:70px;}
+            80% {left:535px; top:50px;}
+            85% { left:560px; top:35px;}
+            90% { left:595px; top:15px;}
+            95% { left:630px; top:0px;}
+            100% {left:670px; top:30px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contain-para">
+            Neque porro quisquam est qui dolorem ipsum quia 
+            dolor sit amet, consectetur, adipisci velit...
+        </div>
+        <div id="move">
+            <img src="balloon-removebg-preview.png" alt="balloon" width="100px" height="164px">
+        </div>
+    </body>
+</html>

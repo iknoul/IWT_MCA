@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style_.css">
+
+        <script>
+                function red()
+                {
+                    document.getElementById("yellow").style.backgroundColor="white";
+                    document.getElementById("red").style.backgroundColor="red";
+                    document.getElementById("yellow").style.backgroundColor="white";
+                    document.getElementById("red").style.backgroundColor="red";  
+                    window.setTimeout('',5000);
+                    document.getElementById("red").style.backgroundColor="white";
+                    document.getElementById("yellow").style.backgroundColor="yellow";              
+                    window.setTimeout('',2000);
+                    document.getElementById("yellow").style.backgroundColor="white";
+                    document.getElementById("green").style.backgroundColor="green";
+                    window.setTimeout('',5000)  
+                    document.getElementById("green").style.backgroundColor="white";
+                        }
+        </script>
+        </head>
+        
+        <body>
+            <div>
+            <div id="red">
+            </div>
+        
+            <div id="yellow">
+            </div>
+            
+            <div id="green">
+            </div>
+            </div>
+            <div id="trn">
+
+                <button type="button" id="on" onclick="red()">
+                    ON
+                </button>
+
+                <button type="button" id="off" onclick="on()">
+                    off
+                </button>
+
+            </div>
+        </body>
+</html>

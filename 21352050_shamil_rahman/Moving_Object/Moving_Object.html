@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<style>
+
+#reddot{
+ width:90px;
+ height:80px;
+ position: absolute;
+ top: 100px;;
+ left:0;
+ }
+ #startBtn,#stopBtn
+ {
+    width:45px;
+    height:45px;
+    border:10px;
+ }
+ #startBtn{
+    background-color: green;
+ }
+ #stopBtn{
+    background-color:red;
+ }
+</style>
+
+</head>
+<body>
+<img src="catWalk.jpg" id="reddot">
+<button type="button" id="startBtn" onclick="walk()">Start</button>
+<button type="button" id="stopBtn" onclick="stop()">Stop</button>
+</body>
+
+<script>
+var x=0;
+var y= document.getElementById("reddot");
+var flag=0;
+document.write()
+function edit()
+{
+   var ad=document.getElementById("kl");
+   kl.disabled=true;
+}
+function walk(){
+ intrVl=setInterval(function(){
+ if(x==window.screen.width-85)
+ {
+  flag=1;
+  y.style.transform="rotateY(180deg)";
+ }
+ else if(x==0)
+ {
+  flag=0;
+  y.style.transform="rotateY(360deg)";
+ }
+ 
+  if(flag==1)
+  {
+  x--;
+  y.style.left=x; 
+  
+  }
+  else{
+ 
+  x++;
+  y.style.left=x;
+  
+  } 
+  
+  },5);
+ 
+ }
+ function stop()
+ {
+    clearInterval(intrVl)
+ }
+</script>
+</html>

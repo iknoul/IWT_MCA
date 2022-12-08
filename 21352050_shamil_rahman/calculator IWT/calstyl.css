@@ -1,0 +1,101 @@
+.outerbox{
+
+    border:1px solid rgb(177, 0, 0);
+    width:500px;
+    margin:auto;
+    margin-top:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+
+}
+
+.keypads{
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 10px;
+
+    padding: 10px;
+
+    margin:auto;
+
+}
+
+.buttons{
+    background-color: rgb(38, 132, 121);
+
+    border-color: rgb(51, 183, 203);
+
+    color: rgb(150, 0, 0);
+}
+
+.operator {
+
+    background-color: rgb(84, 121, 185);
+
+    border-color: rgb(59, 162, 190);
+
+    color: #2da585;
+
+}
+
+.clear {
+
+    background-color: rgb(84, 121, 185);
+
+    border-color: rgb(59, 162, 190);
+
+    color: #2da585;
+
+}
+
+.del{
+    background-color: rgb(84, 121, 185);
+
+    border-color: rgb(59, 162, 190);
+
+    color: #2da585;
+}
+
+.equal-sign {
+
+    background-color: rgb(84, 121, 185);
+
+    border-color: rgb(59, 162, 190);
+
+    color: #2da585;
+
+}
+
+.screen{
+
+    background-color:#caf8f0;
+
+    justify-content: left;
+
+    color: rgb(129, 0, 0);
+
+    font-size: medium;
+
+    width: 130%;
+
+    height: 30%;
+
+    cursor: default;
+
+    padding: 10px; 
+
+    padding-left: auto;
+    padding-right:auto;
+
+    margin: auto;
+
+    margin-bottom: 10px;
+
+}
+body{
+    background-image: url("thww.jpg");
+}
+

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style__.css">
+        <title> box decoration
+        </title>
+        <style>
+            .-clone {
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            }
+            .-slice {
+            -webkit-box-decoration-break: slice;
+            box-decoration-break: slice;
+            }
+            .text {
+            font-size: 16px;
+            line-height: 2em;
+            background-image: linear-gradient(-144deg, #548cb7 0%, #2c8677 100%);
+            border-radius: 4px;
+            padding: 4px 18px;
+            box-sizing: border-box;
+            }
+            .wrap {
+            max-width: 320px;
+            margin: 1em auto;
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrap">
+                <span class="text -clone">
+                using box-decoration-break property specifies how the element's 
+                background, padding, border, box-shadow, margin and clip are 
+                applied when it's wrapped into multiple lines.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Fusce viverra consequat orci, id vestibulum nunc fermentum nec. 
+                Fusce at nunc et ex vehicula iaculis. Maecenas dictum arcu leo,
+                quis tristique nunc lobortis non. Nam consectetur lectus id 
+                lacinia imperdiet. Donec quis mi purus. Mauris massa erat, 
+                finibus quis mi non, lobortis fringilla neque. Curabitur 
+                pellentesque tortor a varius congue.
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
