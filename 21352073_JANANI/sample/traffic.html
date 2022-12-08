@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Signal</title>
+   <style>
+    #traffic-signal{
+        border: 8px solid black;
+        padding: 10px 3px;
+        width: 50px;
+        border-radius: 50px;
+    }
+    #traffic-signal > div{
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: .3;
+    }
+    #line1{
+        height:200px;
+        width:10px;
+        background:#000;
+        margin-left:30px;
+    }
+    #line2{
+        height:10px;
+        width:70px;
+        background:#000;
+    }
+    #green{
+        background-color: green;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    #red{
+        background-color: red;
+    }
+   </style>
+    </head>
+    <body onload="timer;">
+ 
+    <div id="traffic-signal">
+        <div id="green"></div>
+        <div id="yellow"></div>
+        <div id="red"></div>
+    </div>
+    <div id="line1"></div>
+    <div id="line2"></div>
+    <script>
+    function startTrafficSignal () {
+        var green=document.getElementById("green");
+        var red=document.getElementById("red");
+        var yellow=document.getElementById("yellow");
+ 
+        green.style.opacity=1;
+        setTimeout(function () {
+            green.style.opacity=.3;
+            red.style.opacity=.3;
+            yellow.style.opacity=1;
+        },5000);
+ 
+        setTimeout(function () {
+            green.style.opacity=.3;
+            red.style.opacity=1;
+            yellow.style.opacity=.3;
+        },7000);
+ 
+        setTimeout(function () {
+            green.style.opacity=1;
+            red.style.opacity=.3;
+            yellow.style.opacity=.3;
+        },12000);
+    }
+ 
+    var timer=setInterval(function () {
+        startTrafficSignal();
+    },12000);
+ 
+    startTrafficSignal();
+    </script>
+</body>
+</html>

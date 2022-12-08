@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <form action="/removestudent"  >
+   <h3>DELETE STUDENT</h3>
+   
+    <hr>
+ 
+    <label for="Register_Number"><b>Register Number</b></label>
+    <input type="regno" placeholder="register no to be searched" name="regno" id="regno" required><br>
+
+    <button type="submit" class="regbtn">DELETE STUDENT</button>
+    <a href="/form" style="color:yellow">back</a>
+
+    <br>
+
+     {{#if mesg1}}
+     <h3>Data Deleted!</h3>
+     {{/if}}
+     
+  
+     {{#if mesg2}}
+     <h3>Data Not Found!</h3>
+     {{/if}}
+    </form>
+  </div> 
+</body>
+</html>
