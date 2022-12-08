@@ -1,0 +1,63 @@
+
+#blink{
+        color:rgb(255, 255, 255);
+        animation: blink 1s linear infinite ;
+        font-size: 50px;
+        text-align: center;
+    }
+    @keyframes blink 
+    {
+        0%{opacity: 0;}
+        50%{opacity: .5;}
+        100%{opacity: 1;}
+    }
+
+#scrolling{
+    scroll-behavior: smooth;
+    position: relative;
+    color:white;
+}
+
+#blink2{
+    color:red;
+    animation: blink 1s linear infinite ;
+    font-size: 50px;
+    text-align: center;
+}
+@keyframes blink 
+{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+#scrolling{
+scroll-behavior: smooth;
+position: relative;
+color:white;
+}
+  
+#red{
+    background-color: red;
+    color:white;
+}
+
+#orange
+{
+    background-color:orangered ;
+}
+
+#orange1
+{
+    background-color:orange;
+    color:white; 
+}
+
+#lightorange{
+    background-color:#ebd6d0;
+}
+
+#lightorange2{
+   background-color: #f0ebe9;
+}
+

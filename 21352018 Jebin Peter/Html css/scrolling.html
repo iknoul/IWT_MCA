@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        Blinking text using HTML
+    </title>
+</head>
+  
+<body>
+    <h1>GeeksforGeeks</h1>
+  
+    <blink>
+        Blink tag not working
+        in HTML
+    </blink>
+</body>
+  <!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Blinking with JavaScript
+	</title>
+
+	<style>
+		#blink {
+			font-size: 20px;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="blink">
+		Hello Geeks let's Blink
+	</p>
+	
+	<script type="text/javascript">
+		var blink =
+			document.getElementById('blink');
+
+		setInterval(function () {
+			blink.style.opacity =
+			(blink.style.opacity == 0 ? 1 : 0);
+		}, 1000);
+	</script>
+</body>
+
+</html>
+
+</html>

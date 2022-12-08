@@ -1,0 +1,66 @@
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    background: #e53935;
+    background: linear-gradient(to left, #e53935 , #e35d5b);
+  }
+  
+  %test {
+    position: absolute;
+    content: '';
+    transition: all .5s;
+  }
+  
+  .button { 
+    display: inline-block; 
+    padding: 20px 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    font-family: 'Rubik One', sans-serif;
+    text-decoration: none;
+    font-size: 4vw;
+    transition: all .5s;
+    background-color: #3498db;
+  
+    &::before {
+      @extend %test;
+      bottom: -15px;
+      height: 15px;
+      width: 100%;
+      left: 8px;
+      transform: skewX(45deg);
+      background-color: darken(#3498db, 20%);
+    }
+  
+    &::after {
+      @extend %test;
+      right: -15px;
+      height: 100%;
+      width: 15px;
+      bottom: -8px;
+      transform: skewY(45deg);
+      background-color: darken(#3498db, 30%);
+    }
+  
+    &:active {
+      margin-left: 10px;
+      margin-top: 10px;
+      &::before {
+        bottom: -5px;
+        height: 5px;
+        left: 3px;
+      }
+      
+      &::after {
+        right: -5px;
+        width: 5px;
+        bottom: -3px;
+      } 
+    }
+  }
