@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="calscript.js"type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="calstyl.css">
+</head>
+<body>
+ <h1 style="text-align:center">Calculator</h1>
+<div class="outerbox">
+ <br>
+    <table>
+        <tr>
+            <td colspan="3"><input type="text" id="result" class ="screen" style="text-align: right;"></td>
+            <td>
+      </td>
+        </tr>
+    </table>
+<div class="keypads">
+<input type="button" value="7" class="buttons" onClick="display('7')">
+<input type="button" value="8" class="buttons" onClick="display('8')">
+<input type="button" value="9" class="buttons" onClick="display('9')">
+<input type="button" value="+" class="operator" onClick="display('+')">
+<input type="button" value="4" class="buttons" onClick="display('4')">
+<input type="button" value="5" class="buttons" onClick="display('5')">
+<input type="button" value="6" class="buttons" onClick="display('6')">
+<input type="button" value="-" class="operator" onClick="display('-')">
+<input type="button" value="1" class="buttons" onClick="display('1')">
+<input type="button" value="2" class="buttons" onClick="display('2')">
+<input type="button" value="3" class="buttons" onClick="display('3')">
+<input type="button" value="*" class="operator" onClick="display('X')">
+<input type="button" value="0" class="buttons" onClick="display('0')">
+<input type="button" value="." class="buttons" onClick="display('.')">
+<input type="button" value="/" class="operator" onClick="display('/')">
+<input type="button" value="%" class="operator"onClick="display('%')">
+<input type="button" value='C' onClick="clearAll()" class="clear" >    
+<input type="button" value='del' onClick="back()"class="del">
+<input type="button" value="=" class="equal-sign" onClick="solve('')">
+</div>
+</div>
+</body>
+</html>

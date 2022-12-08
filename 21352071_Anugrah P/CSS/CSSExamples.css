@@ -1,0 +1,13 @@
+
+    h1:hover{
+    border-style: double;
+    border-color: blue;
+    border-radius: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+    background-image: linear-gradient(blue, red);
+    color: aliceblue; 
+   
+}

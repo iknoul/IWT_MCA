@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<style>
+.table{
+	border-radius:50;
+
+}
+body{
+background-color: rgb(82, 209, 228);
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+<form action="/attendence" method="POST">
+<div>
+
+<table id="sample_data" class="table" name="example" border=1>
+<thead>
+
+
+
+<th scope="col">Register No</th>
+<th  scope="col">Date</th>
+<th  scope="col">Remarks</th>
+<th scope="col" id="date"><p id="date"></p></th>
+   {{#each rows}}
+<tr>
+   
+            <td>{{this.RegisterNumber}}</td>
+            <td>{{this.date}}</td>
+            <td>{{this.remark}}</td>
+            <td>
+          
+</tr>
+{{/each}}
+</thead>
+</table>
+</form>
+<a href="/" style="color:black">back to main menu</a>
+</body>
+</html>

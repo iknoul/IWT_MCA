@@ -1,0 +1,61 @@
+
+<html>
+<head>
+
+
+</head>
+<body>
+<form action="/attendence" method="POST">
+<div>
+<input type="text"   id="search"  ></div>
+<table id="sample_data" name="example" border=1>
+<thead>
+
+<th scope="con">Sl.No</th>
+<th scope="col">Name</th>
+<th scope="col">Register No</th>
+<th  scope="col">Institution Mail</th>
+<th  scope="col">Personal Mail</th>
+<th  scope="col">Phone No</th>
+<th scope="col" id="date"><p id="date"></p></th>
+  <% if(data.length){ for(var i = 0; i< data.length; i++) {%>
+<tr>
+  <th scope="row"><%= (i+1) %></th>
+            <td><%- data[i].NAME%></td>
+            <td><%- data[i].RNUM%></td>
+            <td><%- data[i].IMAIL%></td>
+            <td><%- data[i].PMAIL%></td>
+            <td><%- data[i].MOBILE%></td>
+            <td>
+            <div id="">
+            <div id="">
+            <button onclick="/edit">Edit</button><p></p>
+            <button onclick="/Delelte">Delete</button></td>
+            </div >
+            </div >
+
+</tr>
+</thead>
+ <% } }else{ %>
+          <tr>
+            <td>No data ever existed.</td>
+          </tr>
+          <% } %>
+          <tr><td colspan=2><button type="submit" id="btn">Submit</button></td></tr>
+ 
+
+
+</table>
+</form>
+
+</body>
+
+<script>
+document.getElementById("date").innerHTML = Date();
+
+
+
+
+
+</script>
+</html>
